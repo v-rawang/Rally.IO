@@ -1,0 +1,16 @@
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Caching.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Caching.pdb
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Core.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Common.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Interfaces.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Redis.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Text.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Core.pdb
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Common.xml
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Redis.xml
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\ServiceStack.Text.xml
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\obj\Release\KnowledgeCenter.Caching.csprojResolveAssemblyReference.cache
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\obj\Release\KnowledgeCenter.Caching.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\obj\Release\KnowledgeCenter.Caching.pdb
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Core.DomainModel.dll
+D:\KnowledgeCenter\SourceCode\platforms\projects\KnowledgeCenter\KnowledgeCenter.Caching\bin\Release\KnowledgeCenter.Core.DomainModel.pdb

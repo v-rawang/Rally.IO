@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B5612C29-9E3B-4086-B6B7-0AF682732511}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>UnitTestInstrument</RootNamespace>
+    <AssemblyName>UnitTestInstrument</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Rally.Framework.Core.DomainModel\Rally.Framework.Core.DomainModel.csproj">
+      <Project>{d07cdfc2-3b7a-4527-bb61-f5215fa408b0}</Project>
+      <Name>Rally.Framework.Core.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rally.Framework.Core\Rally.Framework.Core\Rally.Framework.Core.csproj">
+      <Project>{3c4cbbac-022b-4324-9c15-5f342cd9c5a1}</Project>
+      <Name>Rally.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rally.Framework.Facade\Rally.Framework.Facade.csproj">
+      <Project>{78c24ede-042f-468a-b7df-21c3540dc5ab}</Project>
+      <Name>Rally.Framework.Facade</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rally.Lib.Persistence.Core\Rally.Lib.Persistence.Core.csproj">
+      <Project>{4d7d07cc-8781-475d-b486-9009928bc2ef}</Project>
+      <Name>Rally.Lib.Persistence.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Rally.Lib.Utility.Common\Rally.Lib.Utility.Common.csproj">
+      <Project>{c5654637-5413-47cb-9140-68a9f01e270c}</Project>
+      <Name>Rally.Lib.Utility.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

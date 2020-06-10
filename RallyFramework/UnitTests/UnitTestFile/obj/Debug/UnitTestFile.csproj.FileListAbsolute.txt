@@ -1,0 +1,508 @@
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xml
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xsd
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\NLog.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\nlog_log_mysql_scripts.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\mongocrypt.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_MySQL.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLite.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLServer.sql
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\NLog.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\MySql.Data.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\NLog.xml
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.xml
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csprojAssemblyReference.cache
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CoreCompileInputs.cache
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CopyComplete
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.exe
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xml
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xsd
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\NLog.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\nlog_log_mysql_scripts.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\mongocrypt.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_MySQL.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLite.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLServer.sql
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\NLog.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\MySql.Data.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\NLog.xml
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.xml
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll.config
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csprojAssemblyReference.cache
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CoreCompileInputs.cache
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CopyComplete
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.exe
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.pdb
+F:\新建文件夹\监控软件共性 源代码 200318 王锐 李云飞 已完成\Newford.Framework\UnitTestFile\bin\Debug\NewFord.Lib.Character.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Account_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Identity_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xml
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\ac-items-config.xsd
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Report_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_File_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Log_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\NLog.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\nlog_log_mysql_scripts.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\mongocrypt.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_MySQL.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLite.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\SQLScript_System_SQLServer.sql
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.exe
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\UnitTestFile.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\NewFord.Lib.Character.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\NLog.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\MySql.Data.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.Core.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.DomainModel.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Core.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Facade.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authorization.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Account.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Authentication.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Content.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.File.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.System.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Instrument.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Maintenance.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Camera.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Logging.dll.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLServer.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Persistence.SQLite.dll.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Xml.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Common.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Utility.Encryption.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Lib.Camera.Core.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\NLog.xml
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.xml
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\System.Data.SQLite.dll.config
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CoreCompileInputs.cache
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csproj.CopyComplete
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.exe
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.pdb
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\obj\Debug\UnitTestFile.csprojAssemblyReference.cache
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Printing.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.Shared.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\stdole.dll
+D:\backup\Newford.Framework-final-200320\Newford.Framework\UnitTestFile\bin\Debug\Newford.Framework.Printing.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.exe.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.exe
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.DomainModel.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Facade.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.Core.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authorization.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Account.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authentication.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Content.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.File.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Printing.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.System.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Instrument.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Maintenance.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Camera.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLServer.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Xml.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Common.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Encryption.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.Shared.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\MySql.Data.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\stdole.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.DomainModel.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Facade.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.Core.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authorization.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Account.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authentication.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Content.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.File.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Printing.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.System.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Instrument.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Maintenance.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Camera.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.dll.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLServer.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.dll.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Xml.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Common.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Encryption.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Camera.Core.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.xml
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.xml
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.dll.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csprojAssemblyReference.cache
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csproj.CoreCompileInputs.cache
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csproj.CopyComplete
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.exe
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.pdb
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\ac-items-config.xml
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\ac-items-config.xsd
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\nlog_log_mysql_scripts.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\mongocrypt.dll
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.config
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLServer.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_MySQL.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_SQLite.sql
+D:\SourceCode\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Account_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Identity_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\ac-items-config.xml
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Authorization_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\ac-items-config.xsd
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Report_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_File_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Instrument_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Log_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\nlog_log_mysql_scripts.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\mongocrypt.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_Maintenance_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_MySQL.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_SQLite.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\SQLScript_System_SQLServer.sql
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.exe.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.exe
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\UnitTestFile.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.DomainModel.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Facade.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authorization.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Account.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authentication.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Content.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.File.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Printing.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.System.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Instrument.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Maintenance.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Camera.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLServer.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Xml.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Common.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Encryption.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.Shared.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\MySql.Data.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\stdole.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.DomainModel.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Facade.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authorization.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Account.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Authentication.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Content.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.File.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Printing.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.System.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Instrument.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Maintenance.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Camera.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Framework.Logging.dll.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLServer.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Newford.Lib.Persistence.MySQL.dll.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Persistence.SQLite.dll.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Xml.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Common.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Utility.Encryption.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\Rally.Lib.Camera.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\NLog.xml
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.xml
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\bin\Debug\System.Data.SQLite.dll.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.csproj.CopyComplete
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.exe
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestFile\obj\Debug\UnitTestFile.pdb

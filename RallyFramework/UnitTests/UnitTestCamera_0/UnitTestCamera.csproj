@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F33C4B10-6679-49A6-8522-3126423C421B}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>UnitTestCamera</RootNamespace>
+    <AssemblyName>UnitTestCamera</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Newford.Framework.Camera\Newford.Framework.Camera.csproj">
+      <Project>{265b06ed-d0fb-482c-b065-e8770fe73c26}</Project>
+      <Name>Newford.Framework.Camera</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newford.Framework.Core.DomainModel\Newford.Framework.Core.DomainModel.csproj">
+      <Project>{d07cdfc2-3b7a-4527-bb61-f5215fa408b0}</Project>
+      <Name>Newford.Framework.Core.DomainModel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newford.Framework.Core\Newford.Framework.Core\Newford.Framework.Core.csproj">
+      <Project>{3c4cbbac-022b-4324-9c15-5f342cd9c5a1}</Project>
+      <Name>Newford.Framework.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newford.Lib.Camera.Core\Newford.Lib.Camera.Core.csproj">
+      <Project>{bd6c4119-1b5f-4cfd-9ef2-895867a3d610}</Project>
+      <Name>Newford.Lib.Camera.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Newford.Lib.Camera.HC\Newford.Lib.Camera.HC.csproj">
+      <Project>{bd5a77e9-1563-4ff1-8f5a-38087c8df294}</Project>
+      <Name>Newford.Lib.Camera.HC</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

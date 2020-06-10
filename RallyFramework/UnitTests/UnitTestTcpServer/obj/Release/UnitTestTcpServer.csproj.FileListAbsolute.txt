@@ -1,0 +1,12 @@
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\UnitTestTcpServer.exe.config
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\UnitTestTcpServer.exe
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\UnitTestTcpServer.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\Newford.Lib.Signal.Core.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\Newford.Lib.Signal.Tcp.dll
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\Newford.Lib.Signal.Core.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\bin\Release\Newford.Lib.Signal.Tcp.pdb
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\obj\Release\UnitTestTcpServer.csprojAssemblyReference.cache
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\obj\Release\UnitTestTcpServer.csproj.CoreCompileInputs.cache
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\obj\Release\UnitTestTcpServer.csproj.CopyComplete
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\obj\Release\UnitTestTcpServer.exe
+D:\Rally\Documents\PlatformAndFramework\SourceCode\Newford.Lib\UnitTestTcpServer\obj\Release\UnitTestTcpServer.pdb

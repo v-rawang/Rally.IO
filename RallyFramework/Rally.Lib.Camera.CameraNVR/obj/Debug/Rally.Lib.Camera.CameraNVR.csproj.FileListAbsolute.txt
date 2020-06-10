@@ -1,0 +1,10 @@
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.CameraNVR\bin\Debug\Rally.Lib.Camera.CameraNVR.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.CameraNVR\bin\Debug\Rally.Lib.Camera.CameraNVR.pdb
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.csproj.CoreCompileInputs.cache
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.CameraNVR\bin\Debug\Rally.Lib.Camera.CameraNVR.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.CameraNVR\bin\Debug\Rally.Lib.Camera.CameraNVR.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.CameraNVR\obj\Debug\Rally.Lib.Camera.CameraNVR.pdb

@@ -1,0 +1,10 @@
+D:\SourceCode\RallyFramework\Rally.Lib.Utility.Math\bin\Debug\Rally.Lib.Utility.Math.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Utility.Math\bin\Debug\Rally.Lib.Utility.Math.pdb
+D:\SourceCode\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.csproj.CoreCompileInputs.cache
+D:\SourceCode\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Math\bin\Debug\Rally.Lib.Utility.Math.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Math\bin\Debug\Rally.Lib.Utility.Math.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Math\obj\Debug\Rally.Lib.Utility.Math.pdb

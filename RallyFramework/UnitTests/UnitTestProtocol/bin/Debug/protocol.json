@@ -1,0 +1,8 @@
+{
+  "Header": [0,1],
+  "Receiver": [ 2 ],
+  "Address": [ 3 ],
+  "OperationCode": [ 4 ],
+  "DataLength": [ 5 ],
+  "CRC": [ 6 ]
+}

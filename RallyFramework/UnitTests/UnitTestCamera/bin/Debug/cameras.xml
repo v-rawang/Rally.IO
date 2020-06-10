@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<cameras xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <camera id="54615815-39e8-4594-8dd2-e21ed52fc434">
+    <name>HC</name>
+    <description>海康威视</description>
+    <assemblyName>Rally.Lib.Camera.HC</assemblyName>
+    <assemblyFile>Rally.Lib.Camera.HC.dll</assemblyFile>
+    <typeName>Rally.Lib.Camera.HC.HCCamera</typeName>
+    <version>1.0.0.0</version>
+  </camera>
+  <camera id="ef2928c2-b510-4810-aa74-3f77eaa7b1c0">
+    <name>CT</name>
+    <description>智鑫安盾</description>
+    <assemblyName>Rally.Lib.Camera.CT</assemblyName>
+    <assemblyFile>Rally.Lib.Camera.CT.dll</assemblyFile>
+    <typeName>Rally.Lib.Camera.CT.CTCamera</typeName>
+    <version>1.0.0.0</version>
+  </camera>
+</cameras>

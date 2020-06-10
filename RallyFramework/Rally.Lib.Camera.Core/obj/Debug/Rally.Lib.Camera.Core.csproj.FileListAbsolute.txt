@@ -1,0 +1,12 @@
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\bin\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\bin\Debug\Rally.Lib.Camera.Core.pdb
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.csproj.CoreCompileInputs.cache
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.pdb
+D:\SourceCode\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\bin\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\bin\Debug\Rally.Lib.Camera.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.Core\obj\Debug\Rally.Lib.Camera.Core.pdb

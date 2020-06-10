@@ -1,0 +1,963 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "Newford.Framework.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.MySQL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLite/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLServer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Tcp/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Signal.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        }
+      },
+      "Newford.Lib.Utility.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        }
+      },
+      "Newford.Nuclide.Alarm/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Nuclide.Facade/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Lib.Persistence.MySQL": "1.0.0",
+          "Newford.Lib.Persistence.SQLServer": "1.0.0",
+          "Newford.Lib.Persistence.SQLite": "1.0.0",
+          "Newford.Lib.Signal.Core": "1.0.0",
+          "Newford.Lib.Signal.Tcp": "1.0.0",
+          "Newford.Nuclide.Alarm": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.MeasurementData": "1.0.0",
+          "Newford.Nuclide.Protocol": "1.0.0",
+          "Newford.Nuclide.RawFile": "1.0.0",
+          "Newford.Nuclide.Recognition": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        }
+      },
+      "Newford.Nuclide.MeasurementData/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        }
+      },
+      "Newford.Nuclide.Protocol/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Utility.Common": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        }
+      },
+      "Newford.Nuclide.RawFile/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        }
+      },
+      "Newford.Nuclide.Recognition/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "Newford.Framework.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.MySQL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLite/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLServer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Tcp/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Signal.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        }
+      },
+      "Newford.Lib.Utility.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        }
+      },
+      "Newford.Nuclide.Alarm/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Nuclide.Facade/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Lib.Persistence.MySQL": "1.0.0",
+          "Newford.Lib.Persistence.SQLServer": "1.0.0",
+          "Newford.Lib.Persistence.SQLite": "1.0.0",
+          "Newford.Lib.Signal.Core": "1.0.0",
+          "Newford.Lib.Signal.Tcp": "1.0.0",
+          "Newford.Nuclide.Alarm": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.MeasurementData": "1.0.0",
+          "Newford.Nuclide.Protocol": "1.0.0",
+          "Newford.Nuclide.RawFile": "1.0.0",
+          "Newford.Nuclide.Recognition": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        }
+      },
+      "Newford.Nuclide.MeasurementData/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        }
+      },
+      "Newford.Nuclide.Protocol/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Utility.Common": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        }
+      },
+      "Newford.Nuclide.RawFile/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        }
+      },
+      "Newford.Nuclide.Recognition/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "Newford.Framework.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.MySQL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLite/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLServer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Tcp/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Signal.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        }
+      },
+      "Newford.Lib.Utility.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        }
+      },
+      "Newford.Nuclide.Alarm/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Nuclide.Facade/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Lib.Persistence.MySQL": "1.0.0",
+          "Newford.Lib.Persistence.SQLServer": "1.0.0",
+          "Newford.Lib.Persistence.SQLite": "1.0.0",
+          "Newford.Lib.Signal.Core": "1.0.0",
+          "Newford.Lib.Signal.Tcp": "1.0.0",
+          "Newford.Nuclide.Alarm": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.MeasurementData": "1.0.0",
+          "Newford.Nuclide.Protocol": "1.0.0",
+          "Newford.Nuclide.RawFile": "1.0.0",
+          "Newford.Nuclide.Recognition": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        }
+      },
+      "Newford.Nuclide.MeasurementData/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        }
+      },
+      "Newford.Nuclide.Protocol/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Utility.Common": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        }
+      },
+      "Newford.Nuclide.RawFile/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        }
+      },
+      "Newford.Nuclide.Recognition/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "Newford.Framework.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Framework.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.MySQL/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.MySQL.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLite/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLite.dll": {}
+        }
+      },
+      "Newford.Lib.Persistence.SQLServer/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Persistence.SQLServer.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Core/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Core.dll": {}
+        }
+      },
+      "Newford.Lib.Signal.Tcp/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Signal.Core": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Signal.Tcp.dll": {}
+        }
+      },
+      "Newford.Lib.Utility.Common/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Lib.Utility.Common.dll": {}
+        }
+      },
+      "Newford.Nuclide.Alarm/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Alarm.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.dll": {}
+        }
+      },
+      "Newford.Nuclide.Core.DomainModel/1.0.0": {
+        "type": "project",
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Core.DomainModel.dll": {}
+        }
+      },
+      "Newford.Nuclide.Facade/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Lib.Persistence.MySQL": "1.0.0",
+          "Newford.Lib.Persistence.SQLServer": "1.0.0",
+          "Newford.Lib.Persistence.SQLite": "1.0.0",
+          "Newford.Lib.Signal.Core": "1.0.0",
+          "Newford.Lib.Signal.Tcp": "1.0.0",
+          "Newford.Nuclide.Alarm": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.MeasurementData": "1.0.0",
+          "Newford.Nuclide.Protocol": "1.0.0",
+          "Newford.Nuclide.RawFile": "1.0.0",
+          "Newford.Nuclide.Recognition": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Facade.dll": {}
+        }
+      },
+      "Newford.Nuclide.MeasurementData/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Framework.Core.DomainModel": "1.0.0",
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.MeasurementData.dll": {}
+        }
+      },
+      "Newford.Nuclide.Protocol/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Utility.Common": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Protocol.dll": {}
+        }
+      },
+      "Newford.Nuclide.RawFile/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.RawFile.dll": {}
+        }
+      },
+      "Newford.Nuclide.Recognition/1.0.0": {
+        "type": "project",
+        "dependencies": {
+          "Newford.Lib.Persistence.Core": "1.0.0",
+          "Newford.Nuclide.Core": "1.0.0",
+          "Newford.Nuclide.Core.DomainModel": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Newford.Nuclide.Recognition.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Newford.Framework.Core.DomainModel/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Framework.Core.DomainModel/Newford.Framework.Core.DomainModel.csproj",
+      "msbuildProject": "../Newford.Framework.Core.DomainModel/Newford.Framework.Core.DomainModel.csproj"
+    },
+    "Newford.Lib.Persistence.Core/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Persistence.Core/Newford.Lib.Persistence.Core.csproj",
+      "msbuildProject": "../Newford.Lib.Persistence.Core/Newford.Lib.Persistence.Core.csproj"
+    },
+    "Newford.Lib.Persistence.MySQL/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Persistence.MySQL/Newford.Lib.Persistence.MySQL.csproj",
+      "msbuildProject": "../Newford.Lib.Persistence.MySQL/Newford.Lib.Persistence.MySQL.csproj"
+    },
+    "Newford.Lib.Persistence.SQLite/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Persistence.SQLite/Newford.Lib.Persistence.SQLite.csproj",
+      "msbuildProject": "../Newford.Lib.Persistence.SQLite/Newford.Lib.Persistence.SQLite.csproj"
+    },
+    "Newford.Lib.Persistence.SQLServer/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Persistence.SQLServer/Newford.Lib.Persistence.SQLServer.csproj",
+      "msbuildProject": "../Newford.Lib.Persistence.SQLServer/Newford.Lib.Persistence.SQLServer.csproj"
+    },
+    "Newford.Lib.Signal.Core/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Signal.Core/Newford.Lib.Signal.Core.csproj",
+      "msbuildProject": "../Newford.Lib.Signal.Core/Newford.Lib.Signal.Core.csproj"
+    },
+    "Newford.Lib.Signal.Tcp/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Signal.Tcp/Newford.Lib.Signal.Tcp.csproj",
+      "msbuildProject": "../Newford.Lib.Signal.Tcp/Newford.Lib.Signal.Tcp.csproj"
+    },
+    "Newford.Lib.Utility.Common/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Lib.Utility.Common/Newford.Lib.Utility.Common.csproj",
+      "msbuildProject": "../Newford.Lib.Utility.Common/Newford.Lib.Utility.Common.csproj"
+    },
+    "Newford.Nuclide.Alarm/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Alarm/Newford.Nuclide.Alarm.csproj",
+      "msbuildProject": "../Newford.Nuclide.Alarm/Newford.Nuclide.Alarm.csproj"
+    },
+    "Newford.Nuclide.Core/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Core/Newford.Nuclide.Core.csproj",
+      "msbuildProject": "../Newford.Nuclide.Core/Newford.Nuclide.Core.csproj"
+    },
+    "Newford.Nuclide.Core.DomainModel/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Core.DomainModel/Newford.Nuclide.Core.DomainModel.csproj",
+      "msbuildProject": "../Newford.Nuclide.Core.DomainModel/Newford.Nuclide.Core.DomainModel.csproj"
+    },
+    "Newford.Nuclide.Facade/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Facade/Newford.Nuclide.Facade.csproj",
+      "msbuildProject": "../Newford.Nuclide.Facade/Newford.Nuclide.Facade.csproj"
+    },
+    "Newford.Nuclide.MeasurementData/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.MeasurementData/Newford.Nuclide.MeasurementData.csproj",
+      "msbuildProject": "../Newford.Nuclide.MeasurementData/Newford.Nuclide.MeasurementData.csproj"
+    },
+    "Newford.Nuclide.Protocol/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Protocol/Newford.Nuclide.Protocol.csproj",
+      "msbuildProject": "../Newford.Nuclide.Protocol/Newford.Nuclide.Protocol.csproj"
+    },
+    "Newford.Nuclide.RawFile/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.RawFile/Newford.Nuclide.RawFile.csproj",
+      "msbuildProject": "../Newford.Nuclide.RawFile/Newford.Nuclide.RawFile.csproj"
+    },
+    "Newford.Nuclide.Recognition/1.0.0": {
+      "type": "project",
+      "path": "../Newford.Nuclide.Recognition/Newford.Nuclide.Recognition.csproj",
+      "msbuildProject": "../Newford.Nuclide.Recognition/Newford.Nuclide.Recognition.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "Newford.Nuclide.Core >= 1.0.0",
+      "Newford.Nuclide.Core.DomainModel >= 1.0.0",
+      "Newford.Nuclide.Facade >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\crazy\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\UnitTestCrystalReportPrinting\\UnitTestCrystalReportPrinting.csproj",
+      "projectName": "UnitTestCrystalReportPrinting",
+      "projectPath": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\UnitTestCrystalReportPrinting\\UnitTestCrystalReportPrinting.csproj",
+      "packagesPath": "C:\\Users\\crazy\\.nuget\\packages\\",
+      "outputPath": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\UnitTestCrystalReportPrinting\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\crazy\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {},
+        "https://nuget.telerik.com/nuget": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {
+            "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Core.DomainModel\\Newford.Nuclide.Core.DomainModel.csproj": {
+              "projectPath": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Core.DomainModel\\Newford.Nuclide.Core.DomainModel.csproj"
+            },
+            "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Core\\Newford.Nuclide.Core.csproj": {
+              "projectPath": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Core\\Newford.Nuclide.Core.csproj"
+            },
+            "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Facade\\Newford.Nuclide.Facade.csproj": {
+              "projectPath": "D:\\backup\\Newford.Framework-final-200320\\Newford.Framework\\Newford.Nuclide.Facade\\Newford.Nuclide.Facade.csproj"
+            }
+          }
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {}
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

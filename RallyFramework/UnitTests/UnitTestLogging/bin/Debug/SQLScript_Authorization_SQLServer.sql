@@ -1,0 +1,85 @@
+use newford;
+
+DROP TABLE IF EXISTS Roles;
+DROP TABLE IF EXISTS RoleActors;
+DROP TABLE IF EXISTS RoleOperations;
+DROP TABLE IF EXISTS ObjectOperationAuthItems;
+DROP TABLE IF EXISTS Operations;
+DROP TABLE IF EXISTS RoleDataScopes;
+DROP TABLE IF EXISTS DataScopes;
+
+CREATE TABLE Roles 
+(
+  Id NVARCHAR(250) NOT NULL,
+  Name NVARCHAR(250) NOT NULL,
+  RoleType NVARCHAR(250) NOT NULL,
+  Description NVARCHAR(250) NOT NULL,
+   PRIMARY KEY (Id)
+);
+
+CREATE TABLE RoleActors 
+(
+  Id NVARCHAR(250) NOT NULL,
+  RoleId NVARCHAR(250) NOT NULL,
+  ActorId NVARCHAR(250) NOT NULL,
+  PRIMARY KEY (Id)
+);
+
+CREATE TABLE Operations 
+(
+  Id NVARCHAR(250) NOT NULL,
+  Name NVARCHAR(250) NOT NULL,
+  DataType NVARCHAR(250) NOT NULL,
+  PRIMARY KEY (Id)
+);
+
+CREATE TABLE DataScopes (
+  Id NVARCHAR(250) NOT NULL,
+  ScopeName NVARCHAR(250) NOT NULL,
+  ScopeType NVARCHAR(250) NOT NULL,
+  DataType NVARCHAR(250) NOT NULL,
+  DataIdentifier NVARCHAR(250) NOT NULL,
+   PRIMARY KEY (Id)
+);
+
+CREATE TABLE ObjectOperationAuthItems (
+  Id NVARCHAR(250) NOT NULL,
+  ObjectId NVARCHAR(250) NOT NULL,
+  ActorId NVARCHAR(250) NOT NULL,
+  OperationId NVARCHAR(250) NOT NULL,
+  PRIMARY KEY (Id),
+  INDEX IX_FK_OperationObjectOperationAuthItem (OperationId ASC),
+  CONSTRAINT FK_OperationObjectOperationAuthItem
+    FOREIGN KEY (OperationId)
+    REFERENCES Operations (Id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+CREATE TABLE RoleOperations (
+  Id NVARCHAR(250) NOT NULL,
+  RoleId NVARCHAR(250) NOT NULL,
+  OperationId NVARCHAR(250) NOT NULL,
+  PRIMARY KEY (Id),
+  INDEX IX_FK_OperationRoleOperation (OperationId ASC),
+  CONSTRAINT FK_OperationRoleOperation
+    FOREIGN KEY (OperationId)
+    REFERENCES Operations (Id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);
+
+
+CREATE TABLE RoleDataScopes (
+  Id NVARCHAR(250) NOT NULL,
+  RoleId NVARCHAR(250) NOT NULL,
+  DataScopeId NVARCHAR(250) NOT NULL,
+  ScopeValue NVARCHAR(250) NOT NULL,
+  PRIMARY KEY (Id),
+  INDEX IX_FK_DataScopeRoleDataScope (DataScopeId ASC),
+  CONSTRAINT FK_DataScopeRoleDataScope
+    FOREIGN KEY (DataScopeId)
+    REFERENCES DataScopes (Id)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+);

@@ -8,7 +8,6 @@ D:\SourceCode\RallyFramework\Rally.Lib.Utility.Imaging\obj\Debug\Rally.Lib.Utili
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\bin\Debug\Rally.Lib.Utility.Imaging.dll.config
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\bin\Debug\Rally.Lib.Utility.Imaging.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\bin\Debug\Rally.Lib.Utility.Imaging.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\obj\Debug\Rally.Lib.Utility.Imaging.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\obj\Debug\Rally.Lib.Utility.Imaging.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\obj\Debug\Rally.Lib.Utility.Imaging.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Imaging\obj\Debug\Rally.Lib.Utility.Imaging.pdb

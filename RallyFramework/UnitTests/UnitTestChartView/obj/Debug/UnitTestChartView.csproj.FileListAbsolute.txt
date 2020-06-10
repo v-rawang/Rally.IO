@@ -20,7 +20,6 @@ D:\SourceCode\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChart
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\bin\Debug\UnitTestChartView.exe.config
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\bin\Debug\UnitTestChartView.exe
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\bin\Debug\UnitTestChartView.pdb
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.Form1.resources
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.FormChart.resources
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.csproj.GenerateResource.cache

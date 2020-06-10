@@ -6,7 +6,6 @@ D:\SourceCode\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Ut
 D:\SourceCode\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Utility.Encryption.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\bin\Debug\Rally.Lib.Utility.Encryption.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\bin\Debug\Rally.Lib.Utility.Encryption.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Utility.Encryption.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Utility.Encryption.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Utility.Encryption.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Encryption\obj\Debug\Rally.Lib.Utility.Encryption.pdb

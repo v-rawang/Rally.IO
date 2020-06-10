@@ -15,3 +15,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.HC\obj\Debug\Rally.Lib.Ca
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.HC\obj\Debug\Rally.Lib.Camera.HC.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.HC\obj\Debug\Rally.Lib.Camera.HC.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.HC\obj\Debug\Rally.Lib.Camera.HC.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Camera.HC\obj\Debug\Rally.Lib.Camera.HC.csprojAssemblyReference.cache

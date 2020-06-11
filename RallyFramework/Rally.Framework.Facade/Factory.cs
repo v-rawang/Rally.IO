@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Rally.Lib.Persistence.Core;
 using Rally.Lib.Persistence.MySQL;
+using Rally.Lib.Persistence.Oracle;
+using Rally.Lib.Persistence.PostgreSQL;
 using Rally.Lib.Persistence.SQLite;
 using Rally.Lib.Persistence.SQLServer;
 
@@ -41,14 +43,18 @@ namespace Rally.Framework.Facade
             IDMLOperable dmlOperable = null;
 
             switch (DBType.ToLower())
-            {
-                //case DBTypeEnum.Oracle:
-                //    break;
-                case "sqlserver":
-                    dmlOperable = SQLServerDBOperator.NewInstance(DBConnectionString);
-                    break;
+            {              
                 case "mysql":
                     dmlOperable = MySQLDBOperator.NewInstance(DBConnectionString);
+                    break;
+                case "oracle":
+                    dmlOperable = OracleDBOperator.NewInstance(DBConnectionString);
+                    break;
+                case "postgresql":
+                    dmlOperable = PostgreSQLDBOperator.NewInstance(DBConnectionString);
+                    break;
+                case "sqlserver":
+                    dmlOperable = SQLServerDBOperator.NewInstance(DBConnectionString);
                     break;
                 case "sqlite":
                     dmlOperable = SQLiteDBOperator.NewInstance(DBConnectionString);

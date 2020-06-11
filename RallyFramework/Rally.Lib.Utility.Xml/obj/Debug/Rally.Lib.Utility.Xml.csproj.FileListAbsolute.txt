@@ -6,7 +6,6 @@ D:\SourceCode\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.X
 D:\SourceCode\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.Xml.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\bin\Debug\Rally.Lib.Utility.Xml.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\bin\Debug\Rally.Lib.Utility.Xml.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.Xml.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.Xml.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.Xml.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Xml\obj\Debug\Rally.Lib.Utility.Xml.pdb

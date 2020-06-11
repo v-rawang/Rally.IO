@@ -108,6 +108,14 @@
       <Project>{7be97426-346f-47ee-9a2b-0b718791d771}</Project>
       <Name>Rally.Lib.Persistence.MySQL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rally.Lib.Persistence.Oracle\Rally.Lib.Persistence.Oracle.csproj">
+      <Project>{74fd8894-3bf8-426a-841c-7dd9af93f96b}</Project>
+      <Name>Rally.Lib.Persistence.Oracle</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Rally.Lib.Persistence.PostgreSQL\Rally.Lib.Persistence.PostgreSQL.csproj">
+      <Project>{26d29c3c-6029-4585-86b7-cd27adfdf017}</Project>
+      <Name>Rally.Lib.Persistence.PostgreSQL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rally.Lib.Persistence.SQLite\Rally.Lib.Persistence.SQLite.csproj">
       <Project>{d8d2103b-a8d5-4a5a-aaa6-4aa898b70469}</Project>
       <Name>Rally.Lib.Persistence.SQLite</Name>

@@ -472,47 +472,250 @@ namespace Rally.Lib.Persistence.PostgreSQL
 
         public string ExeSqlScalar(string CommandText)
         {
-            throw new NotImplementedException();
+            string returnValue = string.Empty;
+
+            this.Open();
+
+            NpgsqlCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = CommandText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null)
+            {
+                returnValue = result.ToString();
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
         }
 
         public string ExeSqlScalar(string CommandText, IDictionary<string, object> Parameters)
         {
-            throw new NotImplementedException();
+            string returnValue = string.Empty;
+
+            this.Open();
+
+            NpgsqlCommand cmd = this.conn.CreateCommand();
+
+            cmd.CommandText = CommandText;
+
+            cmd.CommandType = CommandType.Text;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null)
+            {
+                returnValue = result.ToString();
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
         }
 
         public DataSet GetDataSet(string CommandText)
         {
-            throw new NotImplementedException();
+            this.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter();
+
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            da.Fill(ds);
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
         }
 
         public DataSet GetDataSet(string CommandText, IDictionary<string, object> Parameters)
         {
-            throw new NotImplementedException();
+            this.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter();
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            da.Fill(ds);
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
         }
 
         public DataSet GetDataSet(string CommandText, int CurrentIndex, int PageSize, string TableName)
         {
-            throw new NotImplementedException();
+            this.Open();
+
+            NpgsqlCommand cmd = new NpgsqlCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            NpgsqlDataAdapter da = new NpgsqlDataAdapter();
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            try
+            {
+                da.Fill(ds, CurrentIndex, PageSize, TableName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
         }
 
         public DataTable GetDataTable(string CommandText)
         {
-            throw new NotImplementedException();
+            DataSet ds = this.GetDataSet(CommandText);
+
+            if (ds.Tables.Count > 0)
+            {
+                return ds.Tables[0];
+            }
+            else
+            {
+                return (new DataTable());
+            }
         }
 
         public DataTable GetDataTable(string CommandText, IDictionary<string, object> Parameters)
         {
-            throw new NotImplementedException();
+            DataSet ds = this.GetDataSet(CommandText, Parameters);
+
+            if (ds.Tables.Count > 0)
+            {
+                return ds.Tables[0];
+            }
+            else
+            {
+                return (new DataTable());
+            }
         }
 
         public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB)
         {
-            throw new NotImplementedException();
+            int returnValue = -1, totalRecords = 0;
+
+            string sqlCmdText = String.Format("select count(*) from {0}", TableName);
+
+            this.Open();
+
+            NpgsqlCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = sqlCmdText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out totalRecords))
+            {
+                returnValue = this.computePageCount(PageSize, totalRecords);
+            }
+
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
         }
 
         public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB, Func<object, object> ExtensionFunction)
         {
-            throw new NotImplementedException();
+            int returnValue = -1, totalRecords = 0;
+
+            string sqlCmdText = String.Format("select count(*) from {0}", TableName);
+
+            if (ExtensionFunction != null)
+            {
+                sqlCmdText += ExtensionFunction(null);
+            }
+
+            this.Open();
+
+            NpgsqlCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = sqlCmdText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out totalRecords))
+            {
+                returnValue = this.computePageCount(PageSize, totalRecords);
+            }
+
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
         }
 
         private int computePageCount(int eachPageSize, int totalRecordsInDatabase)

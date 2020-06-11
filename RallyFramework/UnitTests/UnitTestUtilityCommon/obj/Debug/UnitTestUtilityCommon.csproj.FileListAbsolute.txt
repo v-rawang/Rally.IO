@@ -21,7 +21,6 @@ D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\bin\Debug\
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\bin\Debug\UnitTestUtilityCommon.pdb
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\bin\Debug\Rally.Lib.Utility.Common.dll
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\bin\Debug\Rally.Lib.Utility.Common.pdb
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.exe

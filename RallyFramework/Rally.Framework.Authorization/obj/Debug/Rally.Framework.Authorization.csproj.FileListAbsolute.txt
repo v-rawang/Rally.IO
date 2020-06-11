@@ -33,3 +33,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Authorization\obj\Debug\Ra
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Authorization\obj\Debug\Rally.Framework.Authorization.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Authorization\obj\Debug\Rally.Framework.Authorization.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Authorization\obj\Debug\Rally.Framework.Authorization.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Authorization\obj\Debug\Rally.Framework.Authorization.csprojAssemblyReference.cache

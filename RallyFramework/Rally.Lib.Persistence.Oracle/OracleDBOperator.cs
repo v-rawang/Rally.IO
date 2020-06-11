@@ -5,126 +5,768 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rally.Lib.Persistence.Core;
+using Oracle.ManagedDataAccess.Client;
 
 namespace Rally.Lib.Persistence.Oracle
 {
     public class OracleDBOperator : IDMLOperable
     {
-        public IDbConnection Connection => throw new NotImplementedException();
-
-        public void BeginTrans()
+        public static IDMLOperable NewInstance(string ConnectionString)
         {
-            throw new NotImplementedException();
+            return new OracleDBOperator(ConnectionString);
         }
 
-        public void Close()
-        {
-            throw new NotImplementedException();
-        }
+        public IDbConnection Connection => this.conn;
 
-        public void CommitTrans()
-        {
-            throw new NotImplementedException();
-        }
+        private OracleConnection conn;
 
-        public int ExeProcedure(string ProcedureName, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
+        private OracleTransaction trans;
 
-        public DataSet ExeProcedureGetRecords(string ProcedureName, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
+        private bool isInTransaction = false;
 
-        public DataTable ExeProcedureGetRecords(string ProcedureName, IDictionary<string, object> Parameters, int TableIndex)
+        public OracleDBOperator(string ConnectionString)
         {
-            throw new NotImplementedException();
-        }
-
-        public IList<IDictionary<string, object>> ExeReader(string CommandText, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IList<IDictionary<string, object>> ExeReader(string CommandText, IDictionary<string, object> Parameters, Func<object, object> ExtensionFunction)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IList<IDictionary<string, object>> ExeReaderWithPaging(string TableName, string KeyName, string SortKeyName, string[] ColumnNames, int CurrentIndex, int PageSize, out int TotalPageCount, out int TotalRecordCountInDB)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IList<IDictionary<string, object>> ExeReaderWithPaging(string TableName, string KeyName, string SortKeyName, string[] ColumnNames, int CurrentIndex, int PageSize, out int TotalPageCount, out int TotalRecordCountInDB, Func<object, object> ExtensionFunction)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int ExeSql(string CommandText)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int ExeSql(string CommandText, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ExeSqlScalar(string CommandText)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string ExeSqlScalar(string CommandText, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataSet GetDataSet(string CommandText)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataSet GetDataSet(string CommandText, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataSet GetDataSet(string CommandText, int CurrentIndex, int PageSize, string TableName)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetDataTable(string CommandText)
-        {
-            throw new NotImplementedException();
-        }
-
-        public DataTable GetDataTable(string CommandText, IDictionary<string, object> Parameters)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB)
-        {
-            throw new NotImplementedException();
-        }
-
-        public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB, Func<object, object> ExtensionFunction)
-        {
-            throw new NotImplementedException();
+            this.conn = new OracleConnection(ConnectionString);
         }
 
         public void Open()
         {
-            throw new NotImplementedException();
+            if (this.conn.State != ConnectionState.Open)
+            {
+                this.conn.Open();
+            }
+        }
+
+        public void Close()
+        {
+            if (this.conn.State == ConnectionState.Open && isInTransaction == false)
+            {
+                this.conn.Close();
+            }
+        }
+
+        public void BeginTrans()
+        {
+            if (this.conn.State != ConnectionState.Open)
+            {
+                this.Open();
+            }
+
+            this.trans = this.conn.BeginTransaction();
+            this.isInTransaction = true;
         }
 
         public void RollbackTrans()
         {
-            throw new NotImplementedException();
+            if (this.isInTransaction)
+            {
+                this.trans.Rollback();
+            }
+
+            this.isInTransaction = false;
+            this.Close();
+        }
+   
+        public void CommitTrans()
+        {
+            if (this.conn.State != ConnectionState.Open)
+            {
+                this.Open();
+            }
+
+            if (this.isInTransaction)
+            {
+                this.trans.Commit();
+            }
+
+            this.isInTransaction = false;
+            this.Close();
+        }
+
+        public int ExeProcedure(string ProcedureName, IDictionary<string, object> Parameters)
+        {
+            int result = -1;
+
+            this.Open();
+            OracleCommand cmd = new OracleCommand();
+            cmd.CommandText = ProcedureName;
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            cmd.CommandType = CommandType.StoredProcedure;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            result = cmd.ExecuteNonQuery();
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return result;
+        }
+
+        public DataSet ExeProcedureGetRecords(string ProcedureName, IDictionary<string, object> Parameters)
+        {
+            this.Open();
+
+            DataSet ds = new DataSet();
+
+            OracleDataAdapter da = new OracleDataAdapter(ProcedureName, this.conn);
+            da.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    da.SelectCommand.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            da.Fill(ds);
+            this.Close();
+
+            return ds;
+        }
+
+        public DataTable ExeProcedureGetRecords(string ProcedureName, IDictionary<string, object> Parameters, int TableIndex)
+        {
+            DataSet ds = this.ExeProcedureGetRecords(ProcedureName, Parameters);
+
+            if (ds.Tables.Count > 0 && TableIndex >= 0)
+            {
+                return ds.Tables[TableIndex];
+            }
+            else
+            {
+                return (new DataTable());
+            }
+        }
+
+        public IList<IDictionary<string, object>> ExeReader(string CommandText, IDictionary<string, object> Parameters)
+        {
+            IList<IDictionary<string, object>> returnValue = null;
+            IDictionary<string, object> record = null;
+
+            this.Open();
+
+            OracleCommand sqlCmd = this.conn.CreateCommand();
+            sqlCmd.CommandText = CommandText;
+            sqlCmd.CommandType = CommandType.Text;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    sqlCmd.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            using (OracleDataReader reader = sqlCmd.ExecuteReader(CommandBehavior.Default))
+            {
+                if (reader.HasRows)
+                {
+                    returnValue = new List<IDictionary<string, object>>();
+
+                    string fieldName;
+                    object fieldValue;
+
+                    while (reader.Read())
+                    {
+                        record = new Dictionary<string, object>();
+
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            //record.Add(reader.GetName(i), reader.GetValue(i));
+
+                            fieldName = reader.GetName(i);
+                            fieldValue = reader.GetValue(i);
+
+                            if (fieldValue is System.DBNull)//if(reader.IsDBNull(i))
+                            {
+                                record.Add(fieldName, null);
+                            }
+                            else
+                            {
+                                record.Add(fieldName, fieldValue);
+                            }
+                        }
+
+                        returnValue.Add(record);
+                    }
+                }
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public IList<IDictionary<string, object>> ExeReader(string CommandText, IDictionary<string, object> Parameters, Func<object, object> ExtensionFunction)
+        {
+            IList<IDictionary<string, object>> returnValue = null;
+            IDictionary<string, object> record = null;
+
+            if (ExtensionFunction != null)
+            {
+                CommandText = (string)ExtensionFunction(new object[] { CommandText, Parameters });
+            }
+
+            this.Open();
+
+            OracleCommand sqlCmd = this.conn.CreateCommand();
+            sqlCmd.CommandText = CommandText;
+            sqlCmd.CommandType = CommandType.Text;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    sqlCmd.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            using (OracleDataReader reader = sqlCmd.ExecuteReader(CommandBehavior.Default))
+            {
+                if (reader.HasRows)
+                {
+                    returnValue = new List<IDictionary<string, object>>();
+
+                    string fieldName;
+                    object fieldValue;
+
+                    while (reader.Read())
+                    {
+                        record = new Dictionary<string, object>();
+
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            fieldName = reader.GetName(i);
+                            fieldValue = reader.GetValue(i);
+
+                            if (fieldValue is System.DBNull)
+                            {
+                                record.Add(fieldName, null);
+                            }
+                            else
+                            {
+                                record.Add(fieldName, fieldValue);
+                            }
+
+                        }
+
+                        returnValue.Add(record);
+                    }
+                }
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public IList<IDictionary<string, object>> ExeReaderWithPaging(string TableName, string KeyName, string SortKeyName, string[] ColumnNames, int CurrentIndex, int PageSize, out int TotalPageCount, out int TotalRecordCountInDB)
+        {
+            IList<IDictionary<string, object>> returnValue = null;
+            IDictionary<string, object> record = null;
+            int totalPages = -1, totalRecords = 0;
+            totalPages = this.GetTotalPageCount(TableName, CurrentIndex, PageSize, out totalRecords);
+
+            string sqlCmdText = this.getPagingSQL(TableName, KeyName, SortKeyName, ColumnNames, CurrentIndex, PageSize);
+
+            this.Open();
+
+            OracleCommand sqlCmd = this.conn.CreateCommand();
+            sqlCmd.CommandText = sqlCmdText;
+            sqlCmd.CommandType = CommandType.Text;
+
+            using (OracleDataReader reader = sqlCmd.ExecuteReader(CommandBehavior.Default))
+            {
+                if (reader.HasRows)
+                {
+                    returnValue = new List<IDictionary<string, object>>();
+
+                    string fieldName;
+                    object fieldValue;
+
+                    while (reader.Read())
+                    {
+                        record = new Dictionary<string, object>();
+
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            //record.Add(reader.GetName(i), reader.GetValue(i));
+
+                            fieldName = reader.GetName(i);
+                            fieldValue = reader.GetValue(i);
+
+                            if (fieldValue is System.DBNull)
+                            {
+                                record.Add(fieldName, null);
+                            }
+                            else
+                            {
+                                record.Add(fieldName, fieldValue);
+                            }
+                        }
+
+                        returnValue.Add(record);
+                    }
+                }
+            }
+
+            TotalPageCount = totalPages;
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public IList<IDictionary<string, object>> ExeReaderWithPaging(string TableName, string KeyName, string SortKeyName, string[] ColumnNames, int CurrentIndex, int PageSize, out int TotalPageCount, out int TotalRecordCountInDB, Func<object, object> ExtensionFunction)
+        {
+            IList<IDictionary<string, object>> returnValue = null;
+            IDictionary<string, object> record = null;
+            int totalPages = -1, totalRecords = 0;
+            totalPages = this.GetTotalPageCount(TableName, CurrentIndex, PageSize, out totalRecords, ExtensionFunction);
+
+            string sqlCmdText = this.getPagingSQL(TableName, KeyName, SortKeyName, ColumnNames, CurrentIndex, PageSize);
+
+            if (ExtensionFunction != null)
+            {
+                sqlCmdText = (string)ExtensionFunction(sqlCmdText);
+            }
+
+            this.Open();
+
+            OracleCommand sqlCmd = this.conn.CreateCommand();
+            sqlCmd.CommandText = sqlCmdText;
+            sqlCmd.CommandType = CommandType.Text;
+
+            using (OracleDataReader reader = sqlCmd.ExecuteReader(CommandBehavior.Default))
+            {
+                if (reader.HasRows)
+                {
+                    returnValue = new List<IDictionary<string, object>>();
+
+                    while (reader.Read())
+                    {
+                        record = new Dictionary<string, object>();
+
+                        string fieldName;
+                        object fieldValue;
+
+                        for (int i = 0; i < reader.FieldCount; i++)
+                        {
+                            //record.Add(reader.GetName(i), reader.GetValue(i));
+
+                            fieldName = reader.GetName(i);
+                            fieldValue = reader.GetValue(i);
+
+                            if (fieldValue is System.DBNull)
+                            {
+                                record.Add(fieldName, null);
+                            }
+                            else
+                            {
+                                record.Add(fieldName, fieldValue);
+                            }
+                        }
+
+                        returnValue.Add(record);
+                    }
+                }
+            }
+
+            TotalPageCount = totalPages;
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public int ExeSql(string CommandText)
+        {
+            int v_ResultCount = -1;
+
+            this.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+            cmd.CommandText = CommandText;
+
+            v_ResultCount = cmd.ExecuteNonQuery();
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return v_ResultCount;
+        }
+
+        public int ExeSql(string CommandText, IDictionary<string, object> Parameters)
+        {
+            int v_ResultCount = -1;
+
+            this.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            cmd.CommandText = CommandText;
+            cmd.CommandType = CommandType.Text;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add((new OracleParameter(paramName, Parameters[paramName])));
+                }
+            }
+
+            v_ResultCount = cmd.ExecuteNonQuery();
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return v_ResultCount;
+        }
+
+        public string ExeSqlScalar(string CommandText)
+        {
+            string returnValue = string.Empty;
+
+            this.Open();
+
+            OracleCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = CommandText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null)
+            {
+                returnValue = result.ToString();
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public string ExeSqlScalar(string CommandText, IDictionary<string, object> Parameters)
+        {
+            string returnValue = string.Empty;
+
+            this.Open();
+
+            OracleCommand cmd = this.conn.CreateCommand();
+
+            cmd.CommandText = CommandText;
+
+            cmd.CommandType = CommandType.Text;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null)
+            {
+                returnValue = result.ToString();
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public DataSet GetDataSet(string CommandText)
+        {
+            this.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            OracleDataAdapter da = new OracleDataAdapter();
+
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            da.Fill(ds);
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
+        }
+
+        public DataSet GetDataSet(string CommandText, IDictionary<string, object> Parameters)
+        {
+            this.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            OracleDataAdapter da = new OracleDataAdapter();
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            if (Parameters != null)
+            {
+                foreach (string paramName in Parameters.Keys)
+                {
+                    cmd.Parameters.Add(new OracleParameter(paramName, Parameters[paramName]));
+                }
+            }
+
+            da.Fill(ds);
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
+        }
+
+        public DataSet GetDataSet(string CommandText, int CurrentIndex, int PageSize, string TableName)
+        {
+            this.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = this.conn;
+
+            if (this.isInTransaction == true)
+            {
+                cmd.Transaction = this.trans;
+            }
+
+            DataSet ds = new DataSet();
+            OracleDataAdapter da = new OracleDataAdapter();
+            cmd.CommandText = CommandText;
+            da.SelectCommand = cmd;
+
+            try
+            {
+                da.Fill(ds, CurrentIndex, PageSize, TableName);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return ds;
+        }
+
+        public DataTable GetDataTable(string CommandText)
+        {
+            DataSet ds = this.GetDataSet(CommandText);
+
+            if (ds.Tables.Count > 0)
+            {
+                return ds.Tables[0];
+            }
+            else
+            {
+                return (new DataTable());
+            }
+        }
+
+        public DataTable GetDataTable(string CommandText, IDictionary<string, object> Parameters)
+        {
+            DataSet ds = this.GetDataSet(CommandText, Parameters);
+
+            if (ds.Tables.Count > 0)
+            {
+                return ds.Tables[0];
+            }
+            else
+            {
+                return (new DataTable());
+            }
+        }
+
+        public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB)
+        {
+            int returnValue = -1, totalRecords = 0;
+
+            string sqlCmdText = String.Format("select count(*) from {0}", TableName);
+
+            this.Open();
+
+            OracleCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = sqlCmdText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out totalRecords))
+            {
+                returnValue = this.computePageCount(PageSize, totalRecords);
+            }
+
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        public int GetTotalPageCount(string TableName, int CurrentIndex, int PageSize, out int TotalRecordCountInDB, Func<object, object> ExtensionFunction)
+        {
+            int returnValue = -1, totalRecords = 0;
+
+            string sqlCmdText = String.Format("select count(*) from {0}", TableName);
+
+            if (ExtensionFunction != null)
+            {
+                sqlCmdText += ExtensionFunction(null);
+            }
+
+            this.Open();
+
+            OracleCommand cmd = this.conn.CreateCommand();
+            cmd.CommandText = sqlCmdText;
+            cmd.CommandType = CommandType.Text;
+
+            object result = cmd.ExecuteScalar();
+
+            if (result != null && int.TryParse(result.ToString(), out totalRecords))
+            {
+                returnValue = this.computePageCount(PageSize, totalRecords);
+            }
+
+            TotalRecordCountInDB = totalRecords;
+
+            if (!this.isInTransaction)
+            {
+                this.Close();
+            }
+
+            return returnValue;
+        }
+
+        private int computePageCount(int eachPageSize, int totalRecordsInDatabase)
+        {
+            int totalPageCount = -1;
+
+            if (eachPageSize != 0)
+            {
+                totalPageCount = totalRecordsInDatabase / eachPageSize;
+
+                if ((totalRecordsInDatabase % eachPageSize) > 0)
+                {
+                    totalPageCount += 1;
+                }
+            }
+            else
+            {
+                totalPageCount = 0;
+            }
+
+            return totalPageCount;
+        }
+
+
+        private string getPagingSQL(string tableName, string keyName, string sortKeyName, string[] columnNames, int pageIndex, int pageSize)
+        {
+            int workload = (pageIndex > 0) ? pageSize * (pageIndex - 1) : 0;
+
+            string returnValue = "select ";
+
+            if (columnNames == null || columnNames.Length <= 0)
+            {
+                returnValue += "* ";
+            }
+            else
+            {
+                for (int i = 0; i < columnNames.Length; i++)
+                {
+                    returnValue += columnNames[i];
+
+                    if (i < (columnNames.Length - 1))
+                    {
+                        returnValue += ", ";
+                    }
+                }
+            }
+
+            //returnValue = String.Format("{0} from {1} order by {4} asc limit {2} offset {3};", returnValue, tableName, pageSize, workload, sortKeyName);
+
+            returnValue = String.Format("select * from (select A.*, rownum r from ({0} from {1}) A where rownum <= {2}) B where r > {3} order by {4};", returnValue, tableName, pageSize, workload, sortKeyName);
+
+            return returnValue;
         }
     }
 }

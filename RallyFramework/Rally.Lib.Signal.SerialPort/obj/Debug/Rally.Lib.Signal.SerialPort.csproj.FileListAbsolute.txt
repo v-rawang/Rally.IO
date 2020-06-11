@@ -11,7 +11,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\bin\Debug\Rall
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\bin\Debug\Rally.Lib.Signal.SerialPort.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\bin\Debug\Rally.Lib.Signal.Core.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\bin\Debug\Rally.Lib.Signal.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\obj\Debug\Rally.Lib.Signal.SerialPort.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\obj\Debug\Rally.Lib.Signal.SerialPort.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\obj\Debug\Rally.Lib.Signal.SerialPort.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.SerialPort\obj\Debug\Rally.Lib.Signal.SerialPort.dll

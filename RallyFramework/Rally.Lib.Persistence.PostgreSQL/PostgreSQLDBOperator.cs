@@ -11,12 +11,12 @@ namespace Rally.Lib.Persistence.PostgreSQL
 {
     public class PostgreSQLDBOperator : IDMLOperable
     {
-        public IDbConnection Connection { get => this.conn; }
-
         public static IDMLOperable NewInstance(string ConnectionString)
         {
             return new PostgreSQLDBOperator(ConnectionString);
         }
+
+        public IDbConnection Connection { get => this.conn; }
 
         private NpgsqlConnection conn;
 
@@ -44,7 +44,6 @@ namespace Rally.Lib.Persistence.PostgreSQL
                 this.conn.Close();
             }
         }
-
 
         public void BeginTrans()
         {

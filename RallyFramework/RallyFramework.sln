@@ -122,6 +122,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.Postg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.Oracle", "Rally.Lib.Persistence.Oracle\Rally.Lib.Persistence.Oracle.csproj", "{74FD8894-3BF8-426A-841C-7DD9AF93F96B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.BigData.MongoDB", "Rally.Lib.BigData.MongoDB\Rally.Lib.BigData.MongoDB.csproj", "{DE473664-922E-493B-B59B-8F0510D20425}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -352,6 +354,10 @@ Global
 		{74FD8894-3BF8-426A-841C-7DD9AF93F96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74FD8894-3BF8-426A-841C-7DD9AF93F96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74FD8894-3BF8-426A-841C-7DD9AF93F96B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE473664-922E-493B-B59B-8F0510D20425}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE473664-922E-493B-B59B-8F0510D20425}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE473664-922E-493B-B59B-8F0510D20425}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE473664-922E-493B-B59B-8F0510D20425}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

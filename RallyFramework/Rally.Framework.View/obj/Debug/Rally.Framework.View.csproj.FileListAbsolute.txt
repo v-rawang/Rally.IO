@@ -15,3 +15,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.View\obj\Debug\Rally.Frame
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.View\obj\Debug\Rally.Framework.View.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.View\obj\Debug\Rally.Framework.View.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.View\obj\Debug\Rally.Framework.View.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.View\obj\Debug\Rally.Framework.View.csprojAssemblyReference.cache

@@ -26,6 +26,8 @@
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "3.1.4",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Facade": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -528,6 +530,477 @@
         }
       },
       "System.Threading.Tasks.Extensions/4.5.3": {},
+      "Rally.Framework.Account/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Account.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Account.dll": {}
+        }
+      },
+      "Rally.Framework.Authentication/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0",
+          "Rally.Lib.Utility.Encryption": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Authentication.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Authentication.dll": {}
+        }
+      },
+      "Rally.Framework.Authorization/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Authorization.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Authorization.dll": {}
+        }
+      },
+      "Rally.Framework.Camera/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Camera.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Camera.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Camera.dll": {}
+        }
+      },
+      "Rally.Framework.Content/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Content.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Content.dll": {}
+        }
+      },
+      "Rally.Framework.Core/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core.DomainModel": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Core.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Core.dll": {}
+        }
+      },
+      "Rally.Framework.Core.DomainModel/1.0.0": {
+        "runtime": {
+          "Rally.Framework.Core.DomainModel.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Core.DomainModel.dll": {}
+        }
+      },
+      "Rally.Framework.Facade/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Account": "1.0.0",
+          "Rally.Framework.Authentication": "1.0.0",
+          "Rally.Framework.Authorization": "1.0.0",
+          "Rally.Framework.Camera": "1.0.0",
+          "Rally.Framework.Content": "1.0.0",
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Framework.File": "1.0.0",
+          "Rally.Framework.Instrument": "1.0.0",
+          "Rally.Framework.Logging": "1.0.0",
+          "Rally.Framework.Maintenance": "1.0.0",
+          "Rally.Framework.Printing": "1.0.0",
+          "Rally.Framework.Protocol": "1.0.0",
+          "Rally.Framework.System": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Persistence.MySQL": "1.0.0",
+          "Rally.Lib.Persistence.Oracle": "1.0.0",
+          "Rally.Lib.Persistence.PostgreSQL": "1.0.0",
+          "Rally.Lib.Persistence.SQLServer": "1.0.0",
+          "Rally.Lib.Persistence.SQLite": "1.0.0",
+          "Rally.Lib.Utility.Xml": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Facade.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Facade.dll": {}
+        }
+      },
+      "Rally.Framework.File/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.File.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.File.dll": {}
+        }
+      },
+      "Rally.Framework.Instrument/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Instrument.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Instrument.dll": {}
+        }
+      },
+      "Rally.Framework.Logging/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Logging.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Logging.dll": {}
+        }
+      },
+      "Rally.Framework.Maintenance/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Maintenance.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Maintenance.dll": {}
+        }
+      },
+      "Rally.Framework.Printing/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Printing.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Printing.dll": {}
+        }
+      },
+      "Rally.Framework.Protocol/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Protocol.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Protocol.dll": {}
+        }
+      },
+      "Rally.Framework.System/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0",
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.System.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.System.dll": {}
+        }
+      },
+      "Rally.Lib.Camera.Core/1.0.0": {
+        "runtime": {
+          "Rally.Lib.Camera.Core.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Camera.Core.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.Core/1.0.0": {
+        "runtime": {
+          "Rally.Lib.Persistence.Core.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Persistence.Core.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.MySQL/1.0.0": {
+        "dependencies": {
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Newford.Lib.Persistence.MySQL.dll": {}
+        },
+        "compile": {
+          "Newford.Lib.Persistence.MySQL.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.Oracle/1.0.0": {
+        "dependencies": {
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Lib.Persistence.Oracle.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Persistence.Oracle.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.PostgreSQL/1.0.0": {
+        "dependencies": {
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Lib.Persistence.PostgreSQL.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Persistence.PostgreSQL.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.SQLite/1.0.0": {
+        "dependencies": {
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Lib.Persistence.SQLite.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Persistence.SQLite.dll": {}
+        }
+      },
+      "Rally.Lib.Persistence.SQLServer/1.0.0": {
+        "dependencies": {
+          "Rally.Lib.Persistence.Core": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Lib.Persistence.SQLServer.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Persistence.SQLServer.dll": {}
+        }
+      },
+      "Rally.Lib.Utility.Common/1.0.0": {
+        "runtime": {
+          "Rally.Lib.Utility.Common.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Utility.Common.dll": {}
+        }
+      },
+      "Rally.Lib.Utility.Encryption/1.0.0": {
+        "runtime": {
+          "Rally.Lib.Utility.Encryption.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Utility.Encryption.dll": {}
+        }
+      },
+      "Rally.Lib.Utility.Xml/1.0.0": {
+        "runtime": {
+          "Rally.Lib.Utility.Xml.dll": {}
+        },
+        "compile": {
+          "Rally.Lib.Utility.Xml.dll": {}
+        }
+      },
+      "NLog/4.0.0.0": {
+        "runtime": {
+          "NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.8.10751"
+          }
+        }
+      },
+      "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.CrystalReports.Engine.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.Shared/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.Shared.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "MySql.Data/6.8.8.0": {
+        "runtime": {
+          "MySql.Data.dll": {
+            "assemblyVersion": "6.8.8.0",
+            "fileVersion": "6.8.8.0"
+          }
+        }
+      },
+      "Oracle.ManagedDataAccess/4.122.19.1": {
+        "runtime": {
+          "Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "4.122.19.1",
+            "fileVersion": "4.122.19.1"
+          }
+        }
+      },
+      "Npgsql/4.1.3.1": {
+        "runtime": {
+          "Npgsql.dll": {
+            "assemblyVersion": "4.1.3.1",
+            "fileVersion": "4.1.3.1"
+          }
+        }
+      },
+      "System.Data.SQLite/1.0.112.0": {
+        "runtime": {
+          "System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.112.0",
+            "fileVersion": "1.0.112.0"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.DataDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.ClientDoc.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.ReportDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.Controllers.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommLayer.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.DataSetConversion.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.Prompting.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.XmlSerialize.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CubeDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommonObjectModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.ObjectFactory.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "Microsoft.Bcl.AsyncInterfaces/1.0.0.0": {
+        "runtime": {
+          "Microsoft.Bcl.AsyncInterfaces.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "4.700.19.46214"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommonControls.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "stdole/7.0.3300.0": {
+        "runtime": {
+          "stdole.dll": {
+            "assemblyVersion": "7.0.3300.0",
+            "fileVersion": "7.0.9466.1"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
         "compile": {
           "Microsoft.AspNetCore.Antiforgery.dll": {}
@@ -2340,6 +2813,236 @@
       "sha512": "sha512-+MvhNtcvIbqmhANyKu91jQnvIRVSTiaOiFNfKWwXGHG48YAb4I/TyH8spsySiPYla7gKal5ZnF3teJqZAximyQ==",
       "path": "system.threading.tasks.extensions/4.5.3",
       "hashPath": "system.threading.tasks.extensions.4.5.3.nupkg.sha512"
+    },
+    "Rally.Framework.Account/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Authentication/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Authorization/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Camera/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Content/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Core.DomainModel/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Facade/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.File/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Instrument/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Maintenance/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Printing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.Protocol/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Framework.System/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Camera.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.MySQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.Oracle/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.PostgreSQL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.SQLite/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Persistence.SQLServer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Utility.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Utility.Encryption/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Rally.Lib.Utility.Xml/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "NLog/4.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.Shared/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MySql.Data/6.8.8.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Oracle.ManagedDataAccess/4.122.19.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Npgsql/4.1.3.1": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "System.Data.SQLite/1.0.112.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.Bcl.AsyncInterfaces/1.0.0.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "stdole/7.0.3300.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
       "type": "referenceassembly",

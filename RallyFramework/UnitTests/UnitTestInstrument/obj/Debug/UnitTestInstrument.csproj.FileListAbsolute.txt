@@ -536,3 +536,5 @@ D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\bin\Debug\Sys
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\bin\Debug\System.Numerics.Vectors.xml
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\bin\Debug\System.Text.Encodings.Web.xml
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\obj\Debug\UnitTestInstrument.exe.config
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\bin\Debug\Rally.Framework.Protocol.dll
+D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestInstrument\bin\Debug\Rally.Framework.Protocol.pdb

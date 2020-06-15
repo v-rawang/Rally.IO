@@ -25,4 +25,3 @@ D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.exe
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.pdb
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestUtilityCommon\obj\Debug\UnitTestUtilityCommon.csprojAssemblyReference.cache

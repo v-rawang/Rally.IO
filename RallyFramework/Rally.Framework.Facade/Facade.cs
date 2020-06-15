@@ -17,6 +17,7 @@ using Rally.Framework.System;
 using Rally.Framework.Instrument;
 using Rally.Framework.Maintenance;
 using Rally.Framework.Camera;
+using Rally.Framework.Protocol;
 
 namespace Rally.Framework.Facade
 {
@@ -101,6 +102,11 @@ namespace Rally.Framework.Facade
         public static ITracer CreateTracer()
         {
             return Tracer.NewInstance();
+        }
+
+        public static IProtocolManager CreateProtocolManager() 
+        {
+            return ProtocolManager.NewInstance();
         }
     }
 }

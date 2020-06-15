@@ -35,7 +35,6 @@ D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\bin\Debug\Xama
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\bin\Debug\Xamasoft.JsonClassGenerator.pdb
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\bin\Debug\Newtonsoft.Json.dll
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\bin\Debug\Newtonsoft.Json.xml
-D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\JsonClassGeneratorLib.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\Xamasoft.JsonClassGenerator.Properties.Resources.resources
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\JsonClassGeneratorLib.csproj.GenerateResource.cache
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\JsonClassGeneratorLib.csproj.CoreCompileInputs.cache

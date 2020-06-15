@@ -4,6 +4,565 @@
     "D:\\SourceCode\\Rally.IO\\RallyFramework\\RallyFramework\\RallyFramework.csproj": {}
   },
   "projects": {
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Account\\Rally.Framework.Account.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Account\\Rally.Framework.Account.csproj",
+        "projectName": "Rally.Framework.Account",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Account\\Rally.Framework.Account.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authentication\\Rally.Framework.Authentication.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authentication\\Rally.Framework.Authentication.csproj",
+        "projectName": "Rally.Framework.Authentication",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authentication\\Rally.Framework.Authentication.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Encryption\\Rally.Lib.Utility.Encryption.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Encryption\\Rally.Lib.Utility.Encryption.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authorization\\Rally.Framework.Authorization.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authorization\\Rally.Framework.Authorization.csproj",
+        "projectName": "Rally.Framework.Authorization",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authorization\\Rally.Framework.Authorization.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Camera\\Rally.Framework.Camera.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Camera\\Rally.Framework.Camera.csproj",
+        "projectName": "Rally.Framework.Camera",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Camera\\Rally.Framework.Camera.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Camera.Core\\Rally.Lib.Camera.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Camera.Core\\Rally.Lib.Camera.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Content\\Rally.Framework.Content.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Content\\Rally.Framework.Content.csproj",
+        "projectName": "Rally.Framework.Content",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Content\\Rally.Framework.Content.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj",
+        "projectName": "Rally.Framework.Core.DomainModel",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj",
+        "projectName": "Rally.Framework.Core",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Facade\\Rally.Framework.Facade.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Facade\\Rally.Framework.Facade.csproj",
+        "projectName": "Rally.Framework.Facade",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Facade\\Rally.Framework.Facade.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Account\\Rally.Framework.Account.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Account\\Rally.Framework.Account.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authentication\\Rally.Framework.Authentication.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authentication\\Rally.Framework.Authentication.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authorization\\Rally.Framework.Authorization.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Authorization\\Rally.Framework.Authorization.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Camera\\Rally.Framework.Camera.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Camera\\Rally.Framework.Camera.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Content\\Rally.Framework.Content.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Content\\Rally.Framework.Content.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.File\\Rally.Framework.File.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.File\\Rally.Framework.File.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Instrument\\Rally.Framework.Instrument.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Instrument\\Rally.Framework.Instrument.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Logging\\Rally.Framework.Logging.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Logging\\Rally.Framework.Logging.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Maintenance\\Rally.Framework.Maintenance.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Maintenance\\Rally.Framework.Maintenance.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Printing\\Rally.Framework.Printing.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Printing\\Rally.Framework.Printing.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Protocol\\Rally.Framework.Protocol.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Protocol\\Rally.Framework.Protocol.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.System\\Rally.Framework.System.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.System\\Rally.Framework.System.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL\\Rally.Lib.Persistence.MySQL.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL\\Rally.Lib.Persistence.MySQL.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle\\Rally.Lib.Persistence.Oracle.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle\\Rally.Lib.Persistence.Oracle.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.PostgreSQL\\Rally.Lib.Persistence.PostgreSQL.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.PostgreSQL\\Rally.Lib.Persistence.PostgreSQL.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite\\Rally.Lib.Persistence.SQLite.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite\\Rally.Lib.Persistence.SQLite.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer\\Rally.Lib.Persistence.SQLServer.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer\\Rally.Lib.Persistence.SQLServer.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.File\\Rally.Framework.File.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.File\\Rally.Framework.File.csproj",
+        "projectName": "Rally.Framework.File",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.File\\Rally.Framework.File.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Instrument\\Rally.Framework.Instrument.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Instrument\\Rally.Framework.Instrument.csproj",
+        "projectName": "Rally.Framework.Instrument",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Instrument\\Rally.Framework.Instrument.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Logging\\Rally.Framework.Logging.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Logging\\Rally.Framework.Logging.csproj",
+        "projectName": "Rally.Framework.Logging",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Logging\\Rally.Framework.Logging.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Maintenance\\Rally.Framework.Maintenance.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Maintenance\\Rally.Framework.Maintenance.csproj",
+        "projectName": "Rally.Framework.Maintenance",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Maintenance\\Rally.Framework.Maintenance.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Printing\\Rally.Framework.Printing.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Printing\\Rally.Framework.Printing.csproj",
+        "projectName": "Rally.Framework.Printing",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Printing\\Rally.Framework.Printing.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Protocol\\Rally.Framework.Protocol.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Protocol\\Rally.Framework.Protocol.csproj",
+        "projectName": "Rally.Framework.Protocol",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Protocol\\Rally.Framework.Protocol.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.System\\Rally.Framework.System.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.System\\Rally.Framework.System.csproj",
+        "projectName": "Rally.Framework.System",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.System\\Rally.Framework.System.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core.DomainModel\\Rally.Framework.Core.DomainModel.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Camera.Core\\Rally.Lib.Camera.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Camera.Core\\Rally.Lib.Camera.Core.csproj",
+        "projectName": "Rally.Lib.Camera.Core",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Camera.Core\\Rally.Lib.Camera.Core.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj",
+        "projectName": "Rally.Lib.Persistence.Core",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL\\Rally.Lib.Persistence.MySQL.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL\\Rally.Lib.Persistence.MySQL.csproj",
+        "projectName": "Rally.Lib.Persistence.MySQL",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL\\Rally.Lib.Persistence.MySQL.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle\\Rally.Lib.Persistence.Oracle.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle\\Rally.Lib.Persistence.Oracle.csproj",
+        "projectName": "Rally.Lib.Persistence.Oracle",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle\\Rally.Lib.Persistence.Oracle.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.PostgreSQL\\Rally.Lib.Persistence.PostgreSQL.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.PostgreSQL\\Rally.Lib.Persistence.PostgreSQL.csproj",
+        "projectName": "Rally.Lib.Persistence.PostgreSQL",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.PostgreSQL\\Rally.Lib.Persistence.PostgreSQL.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite\\Rally.Lib.Persistence.SQLite.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite\\Rally.Lib.Persistence.SQLite.csproj",
+        "projectName": "Rally.Lib.Persistence.SQLite",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite\\Rally.Lib.Persistence.SQLite.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer\\Rally.Lib.Persistence.SQLServer.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer\\Rally.Lib.Persistence.SQLServer.csproj",
+        "projectName": "Rally.Lib.Persistence.SQLServer",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer\\Rally.Lib.Persistence.SQLServer.csproj",
+        "frameworks": {
+          "net461": {
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              }
+            }
+          }
+        }
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj",
+        "projectName": "Rally.Lib.Utility.Common",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Encryption\\Rally.Lib.Utility.Encryption.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Encryption\\Rally.Lib.Utility.Encryption.csproj",
+        "projectName": "Rally.Lib.Utility.Encryption",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Encryption\\Rally.Lib.Utility.Encryption.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
+    "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj",
+        "projectName": "Rally.Lib.Utility.Xml",
+        "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj"
+      },
+      "frameworks": {
+        "net461": {}
+      }
+    },
     "D:\\SourceCode\\Rally.IO\\RallyFramework\\RallyFramework\\RallyFramework.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -32,7 +591,14 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Core\\Rally.Framework.Core\\Rally.Framework.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Facade\\Rally.Framework.Facade.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Framework.Facade\\Rally.Framework.Facade.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

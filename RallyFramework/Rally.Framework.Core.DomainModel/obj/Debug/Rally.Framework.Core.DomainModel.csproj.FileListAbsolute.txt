@@ -9,4 +9,3 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Core.DomainModel\bin\Debug
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Core.DomainModel\obj\Debug\Rally.Framework.Core.DomainModel.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Core.DomainModel\obj\Debug\Rally.Framework.Core.DomainModel.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Core.DomainModel\obj\Debug\Rally.Framework.Core.DomainModel.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Core.DomainModel\obj\Debug\Rally.Framework.Core.DomainModel.csprojAssemblyReference.cache

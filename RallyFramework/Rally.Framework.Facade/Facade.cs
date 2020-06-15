@@ -18,6 +18,8 @@ using Rally.Framework.Instrument;
 using Rally.Framework.Maintenance;
 using Rally.Framework.Camera;
 using Rally.Framework.Protocol;
+using Rally.Framework.Nuclide;
+using System.Net;
 
 namespace Rally.Framework.Facade
 {
@@ -30,7 +32,7 @@ namespace Rally.Framework.Facade
 
         public static IAuthentication CreateAuthenticationManager()
         {
-            return AuthenticationManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true));
+            return Rally.Framework.Authentication.AuthenticationManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true));
         }
 
         public static IUserManager CreateUserManager()
@@ -40,7 +42,7 @@ namespace Rally.Framework.Facade
 
         public static IToken CreateTokenManager()
         {
-            return AuthenticationManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true)) as IToken;
+            return Rally.Framework.Authentication.AuthenticationManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true)) as IToken;
         }
 
         public static IAuthorization CreateAuthorizationManager()
@@ -107,6 +109,11 @@ namespace Rally.Framework.Facade
         public static IProtocolManager CreateProtocolManager() 
         {
             return ProtocolManager.NewInstance();
+        }
+
+        public static INuclideManager CreateNuclideManager() 
+        {
+            return NuclideManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true));
         }
     }
 }

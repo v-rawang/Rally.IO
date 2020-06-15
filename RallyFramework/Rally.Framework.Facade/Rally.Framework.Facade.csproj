@@ -92,6 +92,10 @@
       <Project>{1e809563-0fa1-4a27-b7e9-bb242e10a7dd}</Project>
       <Name>Rally.Framework.Maintenance</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rally.Framework.Nuclide\Rally.Framework.Nuclide.csproj">
+      <Project>{fbed8ab8-faa6-4d66-bc0a-69d4ff7443a5}</Project>
+      <Name>Rally.Framework.Nuclide</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rally.Framework.Printing\Rally.Framework.Printing.csproj">
       <Project>{f29d1a79-0e4d-4f42-b524-e93278e5bc8b}</Project>
       <Name>Rally.Framework.Printing</Name>

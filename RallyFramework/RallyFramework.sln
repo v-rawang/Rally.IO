@@ -132,6 +132,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Protocol.Mo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Protocol.ModbusRtu", "Rally.Framework.Protocol.ModbusRtu\Rally.Framework.Protocol.ModbusRtu.csproj", "{A3352B9A-4716-4046-8057-FE322C456FEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Nuclide", "Rally.Framework.Nuclide\Rally.Framework.Nuclide.csproj", "{FBED8AB8-FAA6-4D66-BC0A-69D4FF7443A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -382,6 +384,10 @@ Global
 		{A3352B9A-4716-4046-8057-FE322C456FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A3352B9A-4716-4046-8057-FE322C456FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A3352B9A-4716-4046-8057-FE322C456FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FBED8AB8-FAA6-4D66-BC0A-69D4FF7443A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FBED8AB8-FAA6-4D66-BC0A-69D4FF7443A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FBED8AB8-FAA6-4D66-BC0A-69D4FF7443A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FBED8AB8-FAA6-4D66-BC0A-69D4FF7443A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

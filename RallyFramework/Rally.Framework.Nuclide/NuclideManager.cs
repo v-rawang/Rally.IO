@@ -125,21 +125,21 @@ namespace Rally.Framework.Nuclide
                 {
                     energyCalibrations.Add(new EnergyCalibration()
                     {
-                        ID = dbResult[i]["Ecl_ID"].ToString(),
-                        OperatorID = (string)dbResult[i]["Ecl_ID"],
-                        CalibrationTime = (DateTime?)dbResult[i]["Ecl_Time"],
-                        InsturmentSerial = (string)dbResult[i]["Ins_InstrumentNo"],
-                        NuclideBoardSerial = (string)dbResult[i]["Ecl_NuclideBoardNo"],
-                        CoefficientA = (float?)dbResult[i]["Ecl_CoefficientA"],
-                        CoefficientB = (float?)dbResult[i]["Ecl_CoefficientB"],
-                        CoefficientC = (float?)dbResult[i]["Ecl_CoefficientC"],
-                        EngergyResolution = (float?)dbResult[i]["Ecl_EnergyResolution"],
+                        ID = dbResult[i]["ID"].ToString(),
+                        OperatorID = (string)dbResult[i]["ID"],
+                        CalibrationTime = (DateTime?)dbResult[i]["Time"],
+                        InsturmentSerial = (string)dbResult[i]["InstrumentNo"],
+                        NuclideBoardSerial = (string)dbResult[i]["NuclideBoardNo"],
+                        CoefficientA = (float?)dbResult[i]["CoefficientA"],
+                        CoefficientB = (float?)dbResult[i]["CoefficientB"],
+                        CoefficientC = (float?)dbResult[i]["CoefficientC"],
+                        EngergyResolution = (float?)dbResult[i]["EnergyResolution"],
                         EnergyChannels = new List<EnergyChannel>() {
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel1"], Energy =  (float?)dbResult[i]["Ecl_Energy1"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel2"], Energy =  (float?)dbResult[i]["Ecl_Energy2"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel3"], Energy =  (float?)dbResult[i]["Ecl_Energy3"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel4"], Energy =  (float?)dbResult[i]["Ecl_Energy4"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel5"], Energy =  (float?)dbResult[i]["Ecl_Energy5"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel1"], Energy =  (float?)dbResult[i]["Energy1"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel2"], Energy =  (float?)dbResult[i]["Energy2"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel3"], Energy =  (float?)dbResult[i]["Energy3"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel4"], Energy =  (float?)dbResult[i]["Energy4"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel5"], Energy =  (float?)dbResult[i]["Energy5"]},
                         },
                     });
                 }
@@ -155,9 +155,9 @@ namespace Rally.Framework.Nuclide
             TotalPageCount = 0;
             TotalRecords = 0;
 
-            string[] columnNames = new string[] { "Ecl_ID", "Ecl_Time", "Ecl_OperatorID", "Ins_InstrumentNo", "Ecl_NuclideBoardNo", "Ecl_Channel1", "Ecl_Energy1", "Ecl_Channel2", "Ecl_Energy2", "Ecl_Channel3", "Ecl_Energy3", "Ecl_Channel4", "Ecl_Energy4", "Ecl_Channel5", "Ecl_Energy5", "Ecl_CoefficientA", "Ecl_CoefficientB", "Ecl_CoefficientC", "Ecl_EnergyResolution" };
+            string[] columnNames = new string[] { "ID", "Time", "OperatorID", "InstrumentNo", "NuclideBoardNo", "Channel1", "Energy1", "Channel2", "Energy2", "Channel3", "Energy3", "Channel4", "Energy4", "Channel5", "Energy5", "CoefficientA", "CoefficientB", "CoefficientC", "EnergyResolution" };
 
-            var dbResult = this.dmlOperable.ExeReaderWithPaging("tb_mon_energycalibration", "Ecl_ID", "Ecl_ID", columnNames, CurrentIndex, PageSize, out TotalPageCount, out TotalRecords, q =>
+            var dbResult = this.dmlOperable.ExeReaderWithPaging("energycalibration", "ID", "ID", columnNames, CurrentIndex, PageSize, out TotalPageCount, out TotalRecords, q =>
             {
 
                 string sqlCommandText = q != null ? q.ToString() : null;
@@ -197,21 +197,21 @@ namespace Rally.Framework.Nuclide
                 {
                     energyCalibrations.Add(new EnergyCalibration()
                     {
-                        ID = dbResult[i]["Ecl_ID"].ToString(),
-                        OperatorID = (string)dbResult[i]["Ecl_OperatorID"],
-                        CalibrationTime = (DateTime?)dbResult[i]["Ecl_Time"],
-                        InsturmentSerial = (string)dbResult[i]["Ins_InstrumentNo"],
-                        NuclideBoardSerial = (string)dbResult[i]["Ecl_NuclideBoardNo"],
-                        CoefficientA = (float?)dbResult[i]["Ecl_CoefficientA"],
-                        CoefficientB = (float?)dbResult[i]["Ecl_CoefficientB"],
-                        CoefficientC = (float?)dbResult[i]["Ecl_CoefficientC"],
-                        EngergyResolution = (float?)dbResult[i]["Ecl_EnergyResolution"],
+                        ID = dbResult[i]["ID"].ToString(),
+                        OperatorID = (string)dbResult[i]["OperatorID"],
+                        CalibrationTime = (DateTime?)dbResult[i]["Time"],
+                        InsturmentSerial = (string)dbResult[i]["InstrumentNo"],
+                        NuclideBoardSerial = (string)dbResult[i]["NuclideBoardNo"],
+                        CoefficientA = (float?)dbResult[i]["CoefficientA"],
+                        CoefficientB = (float?)dbResult[i]["CoefficientB"],
+                        CoefficientC = (float?)dbResult[i]["CoefficientC"],
+                        EngergyResolution = (float?)dbResult[i]["EnergyResolution"],
                         EnergyChannels = new List<EnergyChannel>() {
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel1"], Energy =  (float?)dbResult[i]["Ecl_Energy1"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel2"], Energy =  (float?)dbResult[i]["Ecl_Energy2"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel3"], Energy =  (float?)dbResult[i]["Ecl_Energy3"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel4"], Energy =  (float?)dbResult[i]["Ecl_Energy4"]},
-                            new EnergyChannel() { Channel = (float?)dbResult[i]["Ecl_Channel5"], Energy =  (float?)dbResult[i]["Ecl_Energy5"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel1"], Energy =  (float?)dbResult[i]["Energy1"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel2"], Energy =  (float?)dbResult[i]["Energy2"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel3"], Energy =  (float?)dbResult[i]["Energy3"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel4"], Energy =  (float?)dbResult[i]["Energy4"]},
+                            new EnergyChannel() { Channel = (float?)dbResult[i]["Channel5"], Energy =  (float?)dbResult[i]["Energy5"]},
                         },
                     });
                 }
@@ -313,31 +313,31 @@ namespace Rally.Framework.Nuclide
                 {
                     nuclide = new Core.DomainModel.Nuclide()
                     {
-                        ID = dbResult[i]["Nuc_ID"].ToString(),
-                        Name = (string)dbResult[i]["Nuc_Name"],
-                        Category = dbResult[i]["Nuc_Category"] == null ? 0 : int.Parse(dbResult[i]["Nuc_Category"].ToString()),//(int?)dbResult[i]["Nuc_Category"],
-                        Type = dbResult[i]["Nuc_Type"] == null ? 0 : int.Parse(dbResult[i]["Nuc_Type"].ToString()),
-                        SerialNumber = (string)dbResult[i]["Nuc_No"],
-                        Symbol = (string)dbResult[i]["Nuc_Symbol"],
-                        HalfLife = dbResult[i]["Nuc_HalfLife"] == null ? 0 : double.Parse(dbResult[i]["Nuc_HalfLife"].ToString()),//(int?)dbResult[i]["Nuc_HalfLife"],
-                        HalfLifeUnit = (string)dbResult[i]["Nuc_HalfLifeUnit"],
-                        //Description = (string)dbResult[i]["Nuc_Description"]
+                        ID = dbResult[i]["ID"].ToString(),
+                        Name = (string)dbResult[i]["Name"],
+                        Category = dbResult[i]["Category"] == null ? 0 : int.Parse(dbResult[i]["Category"].ToString()),//(int?)dbResult[i]["Category"],
+                        Type = dbResult[i]["Type"] == null ? 0 : int.Parse(dbResult[i]["Type"].ToString()),
+                        SerialNumber = (string)dbResult[i]["No"],
+                        Symbol = (string)dbResult[i]["Symbol"],
+                        HalfLife = dbResult[i]["HalfLife"] == null ? 0 : double.Parse(dbResult[i]["HalfLife"].ToString()),//(int?)dbResult[i]["HalfLife"],
+                        HalfLifeUnit = (string)dbResult[i]["HalfLifeUnit"],
+                        //Description = (string)dbResult[i]["Description"]
                         EnergyChannels = new List<EnergyChannel>(),
                     };
 
-                    if (dbResult[i]["Nuc_Energy1"] != null)
+                    if (dbResult[i]["Energy1"] != null)
                     {
-                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 1, Energy = (float?)dbResult[i]["Nuc_Energy1"], BranchingRatio = (float?)dbResult[i]["Nuc_BranchingRatio1"], Channel = (float?)dbResult[i]["Nuc_Channel1"] });
+                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 1, Energy = (float?)dbResult[i]["Energy1"], BranchingRatio = (float?)dbResult[i]["BranchingRatio1"], Channel = (float?)dbResult[i]["Channel1"] });
                     }
 
-                    if (dbResult[i]["Nuc_Energy2"] != null)
+                    if (dbResult[i]["Energy2"] != null)
                     {
-                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 2, Energy = (float?)dbResult[i]["Nuc_Energy2"], BranchingRatio = (float?)dbResult[i]["Nuc_BranchingRatio2"], Channel = (float?)dbResult[i]["Nuc_Channel2"] });
+                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 2, Energy = (float?)dbResult[i]["Energy2"], BranchingRatio = (float?)dbResult[i]["BranchingRatio2"], Channel = (float?)dbResult[i]["Channel2"] });
                     }
 
-                    if (dbResult[i]["Nuc_Energy3"] != null)
+                    if (dbResult[i]["Energy3"] != null)
                     {
-                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 3, Energy = (float?)dbResult[i]["Nuc_Energy3"], BranchingRatio = (float?)dbResult[i]["Nuc_BranchingRatio3"], Channel = (float?)dbResult[i]["Nuc_Channel3"] });
+                        nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 3, Energy = (float?)dbResult[i]["Energy3"], BranchingRatio = (float?)dbResult[i]["BranchingRatio3"], Channel = (float?)dbResult[i]["Channel3"] });
                     }
 
                     nuclides.Add(nuclide);
@@ -358,30 +358,30 @@ namespace Rally.Framework.Nuclide
             {
                 nuclide = new Core.DomainModel.Nuclide()
                 {
-                    ID = dbResult[0]["Nuc_ID"].ToString(),
-                    Name = (string)dbResult[0]["Nuc_Name"],
-                    Category = dbResult[0]["Nuc_Category"] == null ? 0 : int.Parse(dbResult[0]["Nuc_Category"].ToString()),  //(int?)dbResult[0]["Nuc_Category"],
-                    Type = dbResult[0]["Nuc_Type"] == null ? 0 : int.Parse(dbResult[0]["Nuc_Type"].ToString()), //(int?)dbResult[0]["Nuc_Type"],
-                    SerialNumber = (string)dbResult[0]["Nuc_Type"],
-                    Symbol = (string)dbResult[0]["Nuc_Symbol"],
-                    HalfLife = dbResult[0]["Nuc_HalfLife"] == null ? 0 : double.Parse(dbResult[0]["Nuc_HalfLife"].ToString()),//(int?)dbResult[0]["Nuc_HalfLife"],
-                    HalfLifeUnit = (string)dbResult[0]["Nuc_HalfLifeUnit"],
-                    //Description = (string)dbResult[0]["Nuc_Description"]
+                    ID = dbResult[0]["ID"].ToString(),
+                    Name = (string)dbResult[0]["Name"],
+                    Category = dbResult[0]["Category"] == null ? 0 : int.Parse(dbResult[0]["Category"].ToString()),  //(int?)dbResult[0]["Category"],
+                    Type = dbResult[0]["Type"] == null ? 0 : int.Parse(dbResult[0]["Type"].ToString()), //(int?)dbResult[0]["Type"],
+                    SerialNumber = (string)dbResult[0]["Type"],
+                    Symbol = (string)dbResult[0]["Symbol"],
+                    HalfLife = dbResult[0]["HalfLife"] == null ? 0 : double.Parse(dbResult[0]["HalfLife"].ToString()),//(int?)dbResult[0]["HalfLife"],
+                    HalfLifeUnit = (string)dbResult[0]["HalfLifeUnit"],
+                    //Description = (string)dbResult[0]["Description"]
                 };
 
-                if (dbResult[0]["Nuc_Energy1"] != null)
+                if (dbResult[0]["Energy1"] != null)
                 {
-                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 1, Energy = (float?)dbResult[0]["Nuc_Energy1"], BranchingRatio = (float?)dbResult[0]["Nuc_BranchingRatio1"], Channel = (float?)dbResult[0]["Nuc_Channel1"] });
+                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 1, Energy = (float?)dbResult[0]["Energy1"], BranchingRatio = (float?)dbResult[0]["BranchingRatio1"], Channel = (float?)dbResult[0]["Channel1"] });
                 }
 
-                if (dbResult[0]["Nuc_Energy2"] != null)
+                if (dbResult[0]["Energy2"] != null)
                 {
-                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 2, Energy = (float?)dbResult[0]["Nuc_Energy2"], BranchingRatio = (float?)dbResult[0]["Nuc_BranchingRatio2"], Channel = (float?)dbResult[0]["Nuc_Channel2"] });
+                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 2, Energy = (float?)dbResult[0]["Energy2"], BranchingRatio = (float?)dbResult[0]["BranchingRatio2"], Channel = (float?)dbResult[0]["Channel2"] });
                 }
 
-                if (dbResult[0]["Nuc_Energy3"] != null)
+                if (dbResult[0]["Energy3"] != null)
                 {
-                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 3, Energy = (float?)dbResult[0]["Nuc_Energy3"], BranchingRatio = (float?)dbResult[0]["Nuc_BranchingRatio3"], Channel = (float?)dbResult[0]["Nuc_Channel3"] });
+                    nuclide.EnergyChannels.Add(new EnergyChannel() { Index = 3, Energy = (float?)dbResult[0]["Energy3"], BranchingRatio = (float?)dbResult[0]["BranchingRatio3"], Channel = (float?)dbResult[0]["Channel3"] });
                 }
             }
 

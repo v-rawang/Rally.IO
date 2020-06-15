@@ -54,6 +54,7 @@
     <Compile Include="IPrinterManager.cs" />
     <Compile Include="IProtocol.cs" />
     <Compile Include="IProtocolManager.cs" />
+    <Compile Include="INuclideManager.cs" />
     <Compile Include="IReportManager.cs" />
     <Compile Include="IToken.cs" />
     <Compile Include="IUserManager.cs" />

@@ -43,6 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Account.cs" />
+    <Compile Include="EnergyCalibration.cs" />
+    <Compile Include="EnergyChannel.cs" />
+    <Compile Include="EnergySpectrum.cs" />
     <Compile Include="ExistsException.cs" />
     <Compile Include="IDNullException.cs" />
     <Compile Include="AccountProvider.cs" />
@@ -64,6 +67,8 @@
     <Compile Include="InstrumentCameraSetting.cs" />
     <Compile Include="MaintenanceAttachment.cs" />
     <Compile Include="MaintenanceOrderLineItem.cs" />
+    <Compile Include="Nuclide.cs" />
+    <Compile Include="NuclideCategory.cs" />
     <Compile Include="Platform.cs" />
     <Compile Include="PrintingArgument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

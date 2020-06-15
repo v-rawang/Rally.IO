@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RallyFramework", "RallyFram
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Caching", "Rally.Lib.Caching\Rally.Lib.Caching.csproj", "{14B88F4A-4818-4247-A5CB-D9ABAE608A70}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Camera.CameraNVR", "Rally.Lib.Camera.CameraNVR\Rally.Lib.Camera.CameraNVR.csproj", "{2BC42072-C31F-4168-9E37-B8190C0DD9EB}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Camera.Core", "Rally.Lib.Camera.Core\Rally.Lib.Camera.Core.csproj", "{BD6C4119-1B5F-4CFD-9EF2-895867A3D610}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Camera.CT", "Rally.Lib.Camera.CT\Rally.Lib.Camera.CT.csproj", "{5675E885-1708-478B-B121-9511834497D9}"
@@ -122,16 +124,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.Oracl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.BigData.MongoDB", "Rally.Lib.BigData.MongoDB\Rally.Lib.BigData.MongoDB.csproj", "{DE473664-922E-493B-B59B-8F0510D20425}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.BigData.Spark", "Rally.Lib.BigData.Spark\Rally.Lib.BigData.Spark.csproj", "{A2369BEA-EF41-4193-978E-D1A43F0DCF5A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentation.Xaml", "Presentation.Xaml\Presentation.Xaml.csproj", "{2C2701A1-FE41-4DF7-95D9-5884EAFE5DB9}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Protocol", "Rally.Framework.Protocol\Rally.Framework.Protocol.csproj", "{C39FF96D-6316-4261-8AAA-F7CE69D173BD}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Protocol.ModbusTcp", "Rally.Framework.Protocol.ModbusTcp\Rally.Framework.Protocol.ModbusTcp.csproj", "{BD475B64-2934-402A-8C54-AB34D4215E90}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Protocol.ModbusRtu", "Rally.Framework.Protocol.ModbusRtu\Rally.Framework.Protocol.ModbusRtu.csproj", "{A3352B9A-4716-4046-8057-FE322C456FEB}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -146,6 +138,10 @@ Global
 		{14B88F4A-4818-4247-A5CB-D9ABAE608A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14B88F4A-4818-4247-A5CB-D9ABAE608A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{14B88F4A-4818-4247-A5CB-D9ABAE608A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BC42072-C31F-4168-9E37-B8190C0DD9EB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BC42072-C31F-4168-9E37-B8190C0DD9EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BC42072-C31F-4168-9E37-B8190C0DD9EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BC42072-C31F-4168-9E37-B8190C0DD9EB}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BD6C4119-1B5F-4CFD-9EF2-895867A3D610}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BD6C4119-1B5F-4CFD-9EF2-895867A3D610}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD6C4119-1B5F-4CFD-9EF2-895867A3D610}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -362,26 +358,6 @@ Global
 		{DE473664-922E-493B-B59B-8F0510D20425}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DE473664-922E-493B-B59B-8F0510D20425}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DE473664-922E-493B-B59B-8F0510D20425}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2369BEA-EF41-4193-978E-D1A43F0DCF5A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2369BEA-EF41-4193-978E-D1A43F0DCF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2369BEA-EF41-4193-978E-D1A43F0DCF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2369BEA-EF41-4193-978E-D1A43F0DCF5A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2C2701A1-FE41-4DF7-95D9-5884EAFE5DB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2C2701A1-FE41-4DF7-95D9-5884EAFE5DB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2C2701A1-FE41-4DF7-95D9-5884EAFE5DB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2C2701A1-FE41-4DF7-95D9-5884EAFE5DB9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C39FF96D-6316-4261-8AAA-F7CE69D173BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C39FF96D-6316-4261-8AAA-F7CE69D173BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C39FF96D-6316-4261-8AAA-F7CE69D173BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C39FF96D-6316-4261-8AAA-F7CE69D173BD}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BD475B64-2934-402A-8C54-AB34D4215E90}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BD475B64-2934-402A-8C54-AB34D4215E90}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BD475B64-2934-402A-8C54-AB34D4215E90}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BD475B64-2934-402A-8C54-AB34D4215E90}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A3352B9A-4716-4046-8057-FE322C456FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A3352B9A-4716-4046-8057-FE322C456FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A3352B9A-4716-4046-8057-FE322C456FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A3352B9A-4716-4046-8057-FE322C456FEB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

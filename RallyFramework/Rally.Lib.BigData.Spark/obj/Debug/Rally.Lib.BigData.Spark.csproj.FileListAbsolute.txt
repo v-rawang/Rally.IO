@@ -1,5 +1,0 @@
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark\bin\Debug\Rally.Lib.BigData.Spark.dll
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark\bin\Debug\Rally.Lib.BigData.Spark.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark\obj\Debug\Rally.Lib.BigData.Spark.csproj.CoreCompileInputs.cache
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark\obj\Debug\Rally.Lib.BigData.Spark.dll
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark\obj\Debug\Rally.Lib.BigData.Spark.pdb

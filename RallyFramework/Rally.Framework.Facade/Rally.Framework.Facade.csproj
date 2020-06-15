@@ -96,10 +96,6 @@
       <Project>{f29d1a79-0e4d-4f42-b524-e93278e5bc8b}</Project>
       <Name>Rally.Framework.Printing</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Rally.Framework.Protocol\Rally.Framework.Protocol.csproj">
-      <Project>{c39ff96d-6316-4261-8aaa-f7ce69d173bd}</Project>
-      <Name>Rally.Framework.Protocol</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Rally.Framework.System\Rally.Framework.System.csproj">
       <Project>{cc7aaf6f-83b3-4a83-8b59-9492bc416ed8}</Project>
       <Name>Rally.Framework.System</Name>

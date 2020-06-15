@@ -565,5 +565,3 @@ D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\System
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\System.Numerics.Vectors.xml
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\System.Text.Encodings.Web.xml
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\Rally.Framework.Protocol.dll
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestLogging\bin\Debug\Rally.Framework.Protocol.pdb

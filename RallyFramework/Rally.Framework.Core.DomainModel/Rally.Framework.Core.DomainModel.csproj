@@ -67,7 +67,6 @@
     <Compile Include="Platform.cs" />
     <Compile Include="PrintingArgument.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ProtocolMeta.cs" />
     <Compile Include="ReportSetting.cs" />
     <Compile Include="Token.cs" />
     <Compile Include="VideoConnectionTypeEnum.cs" />

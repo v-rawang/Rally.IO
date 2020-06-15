@@ -23,8 +23,8 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\bin\Debug\Rally.Fra
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\bin\Debug\Rally.Framework.Core.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\bin\Debug\Rally.Lib.Camera.Core.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\bin\Debug\Rally.Lib.Utility.Common.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Camera\obj\Debug\Rally.Framework.Camera.csprojAssemblyReference.cache

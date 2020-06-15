@@ -9,3 +9,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.Core\bin\Debug\Rally.Lib.
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.Core\obj\Debug\Rally.Lib.Signal.Core.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.Core\obj\Debug\Rally.Lib.Signal.Core.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.Core\obj\Debug\Rally.Lib.Signal.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Signal.Core\obj\Debug\Rally.Lib.Signal.Core.csprojAssemblyReference.cache

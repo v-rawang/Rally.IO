@@ -362,11 +362,12 @@ namespace Rally.Framework.Nuclide
                     Name = (string)dbResult[0]["Name"],
                     Category = dbResult[0]["Category"] == null ? 0 : int.Parse(dbResult[0]["Category"].ToString()),  //(int?)dbResult[0]["Category"],
                     Type = dbResult[0]["Type"] == null ? 0 : int.Parse(dbResult[0]["Type"].ToString()), //(int?)dbResult[0]["Type"],
-                    SerialNumber = (string)dbResult[0]["Type"],
+                    SerialNumber = (string)dbResult[0]["No"],
                     Symbol = (string)dbResult[0]["Symbol"],
                     HalfLife = dbResult[0]["HalfLife"] == null ? 0 : double.Parse(dbResult[0]["HalfLife"].ToString()),//(int?)dbResult[0]["HalfLife"],
                     HalfLifeUnit = (string)dbResult[0]["HalfLifeUnit"],
                     //Description = (string)dbResult[0]["Description"]
+                    EnergyChannels = new List<EnergyChannel>(),
                 };
 
                 if (dbResult[0]["Energy1"] != null)

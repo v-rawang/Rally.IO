@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Rally.Lib.Persistence.Core;
-using Rally.Lib.Persistence.MySQL;
+using Rally.Lib.Persistence.MySQL.Standard;
 using Rally.Lib.Persistence.Oracle;
 using Rally.Lib.Persistence.PostgreSQL;
 using Rally.Lib.Persistence.SQLite;
@@ -45,7 +45,7 @@ namespace Rally.Framework.Facade
             switch (DBType.ToLower())
             {              
                 case "mysql":
-                    dmlOperable = MySQLDBOperator.NewInstance(DBConnectionString);
+                    dmlOperable = MySQLDBOperatorStandard.NewInstance(DBConnectionString); //MySQLDBOperator.NewInstance(DBConnectionString);
                     break;
                 case "oracle":
                     dmlOperable = OracleDBOperator.NewInstance(DBConnectionString);

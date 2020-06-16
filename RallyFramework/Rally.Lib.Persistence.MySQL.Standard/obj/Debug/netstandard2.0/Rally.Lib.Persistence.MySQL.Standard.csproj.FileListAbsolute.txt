@@ -1,0 +1,12 @@
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.deps.json
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.AssemblyInfoInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.AssemblyInfo.cs
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.csproj.CopyComplete
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.MySQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.MySQL.Standard.pdb

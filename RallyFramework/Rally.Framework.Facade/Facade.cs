@@ -11,7 +11,7 @@ using Rally.Framework.Authentication;
 using Rally.Framework.Authorization;
 using Rally.Framework.Content;
 using Rally.Framework.File;
-using Rally.Framework.Printing;
+//using Rally.Framework.Printing;
 using Rally.Framework.Logging;
 using Rally.Framework.System;
 using Rally.Framework.Instrument;
@@ -60,10 +60,10 @@ namespace Rally.Framework.Facade
             return FileManager.NewInstance(Factory.CreateDMLOperable(Global.CurrentDBConnectionString, Global.CurrentDBType), (DBTypeEnum)Enum.Parse(typeof(DBTypeEnum), Global.CurrentDBType, true));
         }
 
-        public static IPrinterManager CreatePrinterManager()
-        {
-            return PrinterManager.NewInstance();
-        }
+        //public static IPrinterManager CreatePrinterManager()
+        //{
+        //    return PrinterManager.NewInstance();
+        //}
 
         public static IApplicationManager CreateApplicationManager()
         {

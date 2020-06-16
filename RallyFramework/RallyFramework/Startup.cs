@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Rally.Framework.Facade;
 
 namespace RallyFramework
 {
@@ -29,6 +30,9 @@ namespace RallyFramework
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            Global.CurrentDBConnectionString = Configuration["Data:DefaultConnection:ConnectionString"];
+            Global.CurrentDBType = Configuration["DbType"];
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
@@ -51,7 +55,8 @@ namespace RallyFramework
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
-            });
+            });     
         }
     }
 }
+;

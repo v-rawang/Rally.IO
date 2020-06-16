@@ -1,0 +1,85 @@
+use newford;
+
+DROP TABLE IF EXISTS `Roles`;
+DROP TABLE IF EXISTS `RoleActors`;
+DROP TABLE IF EXISTS `RoleOperations`;
+DROP TABLE IF EXISTS `ObjectOperationAuthItems`;
+DROP TABLE IF EXISTS `Operations`;
+DROP TABLE IF EXISTS `RoleDataScopes`;
+DROP TABLE IF EXISTS `DataScopes`;
+
+CREATE TABLE IF NOT EXISTS `Roles` 
+(
+  `Id` VARCHAR(250) NOT NULL,
+  `Name` VARCHAR(250) NOT NULL,
+  `RoleType` VARCHAR(250) NOT NULL,
+  `Description` VARCHAR(250) NOT NULL,
+   PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `RoleActors` 
+(
+  `Id` VARCHAR(250) NOT NULL,
+  `RoleId` VARCHAR(250) NOT NULL,
+  `ActorId` VARCHAR(250) NOT NULL,
+   PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `Operations` 
+(
+  `Id` VARCHAR(250) NOT NULL,
+  `Name` VARCHAR(250) NOT NULL,
+  `DataType` VARCHAR(250) NOT NULL,
+   PRIMARY KEY (`Id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `DataScopes` (
+  `Id` VARCHAR(250) NOT NULL COMMENT '',
+  `ScopeName` VARCHAR(250) NOT NULL COMMENT '',
+  `ScopeType` VARCHAR(250) NOT NULL COMMENT '',
+  `DataType` VARCHAR(250) NOT NULL COMMENT '',
+  `DataIdentifier` VARCHAR(250) NOT NULL COMMENT '',
+   PRIMARY KEY (`Id`)
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `ObjectOperationAuthItems` (
+  `Id` VARCHAR(250) NOT NULL COMMENT '',
+  `ObjectId` VARCHAR(250) NOT NULL COMMENT '',
+  `ActorId` VARCHAR(250) NOT NULL COMMENT '',
+  `OperationId` VARCHAR(250) NOT NULL COMMENT '',
+  PRIMARY KEY (`Id`),
+  INDEX `IX_FK_OperationObjectOperationAuthItem` (`OperationId` ASC),
+  CONSTRAINT `FK_OperationObjectOperationAuthItem`
+    FOREIGN KEY (`OperationId`)
+    REFERENCES `Operations` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+CREATE TABLE IF NOT EXISTS `RoleOperations` (
+  `Id` VARCHAR(250) NOT NULL COMMENT '',
+  `RoleId` VARCHAR(250) NOT NULL COMMENT '',
+  `OperationId` VARCHAR(250) NOT NULL COMMENT '',
+  PRIMARY KEY (`Id`),
+  INDEX `IX_FK_OperationRoleOperation` (`OperationId` ASC),
+  CONSTRAINT `FK_OperationRoleOperation`
+    FOREIGN KEY (`OperationId`)
+    REFERENCES `Operations` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+CREATE TABLE IF NOT EXISTS `RoleDataScopes` (
+  `Id` VARCHAR(250) NOT NULL COMMENT '',
+  `RoleId` VARCHAR(250) NOT NULL COMMENT '',
+  `DataScopeId` VARCHAR(250) NOT NULL COMMENT '',
+  `ScopeValue` VARCHAR(250) NOT NULL COMMENT '',
+  PRIMARY KEY (`Id`),
+  INDEX `IX_FK_DataScopeRoleDataScope` (`DataScopeId` ASC),
+  CONSTRAINT `FK_DataScopeRoleDataScope`
+    FOREIGN KEY (`DataScopeId`)
+    REFERENCES `DataScopes` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;

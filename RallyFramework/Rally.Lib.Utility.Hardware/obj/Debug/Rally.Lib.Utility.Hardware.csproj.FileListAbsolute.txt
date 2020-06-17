@@ -9,3 +9,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Hardware\bin\Debug\Rally
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Hardware\obj\Debug\Rally.Lib.Utility.Hardware.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Hardware\obj\Debug\Rally.Lib.Utility.Hardware.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Hardware\obj\Debug\Rally.Lib.Utility.Hardware.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Utility.Hardware\obj\Debug\Rally.Lib.Utility.Hardware.csprojAssemblyReference.cache

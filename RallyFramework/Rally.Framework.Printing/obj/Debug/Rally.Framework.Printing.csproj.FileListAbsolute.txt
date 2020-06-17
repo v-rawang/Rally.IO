@@ -57,3 +57,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.F
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.csprojAssemblyReference.cache

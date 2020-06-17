@@ -29,3 +29,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.System\obj\Debug\Rally.Fra
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.System\obj\Debug\Rally.Framework.System.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.System\obj\Debug\Rally.Framework.System.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.System\obj\Debug\Rally.Framework.System.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.System\obj\Debug\Rally.Framework.System.csprojAssemblyReference.cache

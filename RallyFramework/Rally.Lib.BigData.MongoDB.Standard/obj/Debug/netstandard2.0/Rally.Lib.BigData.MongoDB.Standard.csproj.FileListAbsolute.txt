@@ -1,0 +1,9 @@
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.deps.json
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.AssemblyInfoInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.AssemblyInfo.cs
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.csprojAssemblyReference.cache

@@ -123,3 +123,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.csprojAssemblyReference.cache

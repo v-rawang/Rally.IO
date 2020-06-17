@@ -138,15 +138,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RallyFramework.API", "Rally
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.MySQL.Standard", "Rally.Lib.Persistence.MySQL.Standard\Rally.Lib.Persistence.MySQL.Standard.csproj", "{6C4D460F-F944-4EE9-A794-9E479843A31E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.Oracle.Standard", "Rally.Lib.Persistence.Oracle.Standard\Rally.Lib.Persistence.Oracle.Standard.csproj", "{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.Oracle.Standard", "Rally.Lib.Persistence.Oracle.Standard\Rally.Lib.Persistence.Oracle.Standard.csproj", "{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.PostgreSQL.Standard", "Rally.Lib.Persistence.PostgreSQL.Standard\Rally.Lib.Persistence.PostgreSQL.Standard.csproj", "{23513395-235A-4D95-A502-C32C5480BF0A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.PostgreSQL.Standard", "Rally.Lib.Persistence.PostgreSQL.Standard\Rally.Lib.Persistence.PostgreSQL.Standard.csproj", "{23513395-235A-4D95-A502-C32C5480BF0A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.SQLite.Standard", "Rally.Lib.Persistence.SQLite.Standard\Rally.Lib.Persistence.SQLite.Standard.csproj", "{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.SQLite.Standard", "Rally.Lib.Persistence.SQLite.Standard\Rally.Lib.Persistence.SQLite.Standard.csproj", "{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.SQLServer.Standard", "Rally.Lib.Persistence.SQLServer.Standard\Rally.Lib.Persistence.SQLServer.Standard.csproj", "{02542B70-7A16-4704-B913-A113315E5824}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.SQLServer.Standard", "Rally.Lib.Persistence.SQLServer.Standard\Rally.Lib.Persistence.SQLServer.Standard.csproj", "{02542B70-7A16-4704-B913-A113315E5824}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Facade.Standard", "Rally.Framework.Facade.Standard\Rally.Framework.Facade.Standard.csproj", "{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Framework.Facade.Standard", "Rally.Framework.Facade.Standard\Rally.Framework.Facade.Standard.csproj", "{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.BigData.MongoDB.Standard", "Rally.Lib.BigData.MongoDB.Standard\Rally.Lib.BigData.MongoDB.Standard.csproj", "{F7696AA6-5F65-448B-855E-5B4153482E43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.BigData.Spark.Standard", "Rally.Lib.BigData.Spark.Standard\Rally.Lib.BigData.Spark.Standard.csproj", "{528261CF-9387-47A4-875F-7279543C3F5B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -430,6 +434,14 @@ Global
 		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F7696AA6-5F65-448B-855E-5B4153482E43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F7696AA6-5F65-448B-855E-5B4153482E43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F7696AA6-5F65-448B-855E-5B4153482E43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F7696AA6-5F65-448B-855E-5B4153482E43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{528261CF-9387-47A4-875F-7279543C3F5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528261CF-9387-47A4-875F-7279543C3F5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528261CF-9387-47A4-875F-7279543C3F5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528261CF-9387-47A4-875F-7279543C3F5B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

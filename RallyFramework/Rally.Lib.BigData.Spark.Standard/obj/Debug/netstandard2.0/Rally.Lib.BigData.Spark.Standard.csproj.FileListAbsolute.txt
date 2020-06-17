@@ -1,0 +1,11 @@
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.deps.json
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.AssemblyInfoInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.AssemblyInfo.cs
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\bin\Debug\netstandard2.0\microsoft-spark-2.3.x-0.11.0.jar
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\bin\Debug\netstandard2.0\microsoft-spark-2.4.x-0.11.0.jar
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\bin\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.Spark.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.Spark.Standard.pdb

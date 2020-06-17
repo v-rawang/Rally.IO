@@ -119,7 +119,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\bin\Debug
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\bin\Debug\System.Text.Json.xml
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\bin\Debug\System.Threading.Tasks.Extensions.xml
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\bin\Debug\System.ValueTuple.xml
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL\obj\Debug\Rally.Lib.Persistence.PostgreSQL.dll

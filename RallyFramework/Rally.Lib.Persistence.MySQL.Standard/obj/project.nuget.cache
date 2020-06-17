@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "IE+SQEAD/FbKXO0XZ/PwtQJtRiGqg/z419QoYLK4bZ2bJVE64NSS2LQtlqv6Ok8PJ01HTjWveWiT5ysoRkgmJg==",
+  "dgSpecHash": "AStQG14HUVgnf5hh2ACqRi6CobmAIqded7NsGyDlS7V7lE9w9ZHE6CEqx2C6rMG6CEWpLw6djmyfa0luPGjKjg==",
   "success": true,
   "projectFilePath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.MySQL.Standard\\Rally.Lib.Persistence.MySQL.Standard.csproj",
   "expectedPackageFiles": [

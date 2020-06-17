@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "Lryxub3a1x4rpqgBMrKBPtrCTv73DowJC7p/jvlSgKDKAuec6OXji2rb8j8tAFJUo8x9FLA938RE2heQsCSYPg==",
+  "success": true,
+  "projectFilePath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLite.Standard\\Rally.Lib.Persistence.SQLite.Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crazy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\system.data.sqlite.core\\1.0.113.1\\system.data.sqlite.core.1.0.113.1.nupkg.sha512"
+  ],
+  "logs": []
+}

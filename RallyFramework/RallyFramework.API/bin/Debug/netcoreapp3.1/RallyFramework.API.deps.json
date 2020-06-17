@@ -27,7 +27,7 @@
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
           "Rally.Framework.Core": "1.0.0",
           "Rally.Framework.Core.DomainModel": "1.0.0",
-          "Rally.Framework.Facade": "1.0.0",
+          "Rally.Framework.Facade.Standard": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -154,7 +154,7 @@
           "Microsoft.VisualBasic.Core": "10.0.5.0",
           "Microsoft.VisualBasic": "10.0.0.0",
           "Microsoft.Win32.Primitives": "4.1.2.0",
-          "Microsoft.Win32.Registry": "4.1.3.0",
+          "Microsoft.Win32.Registry.Reference": "4.1.3.0",
           "mscorlib": "4.0.0.0",
           "netstandard": "2.1.0.0",
           "System.AppContext": "4.2.2.0",
@@ -407,12 +407,18 @@
           "System.Threading": "4.0.11"
         }
       },
-      "Microsoft.NETCore.Platforms/3.0.0": {},
+      "Microsoft.NETCore.Platforms/3.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets/1.10.9": {},
+      "Microsoft.Win32.Registry/4.7.0": {
+        "dependencies": {
+          "System.Security.AccessControl": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0"
+        }
+      },
       "Microsoft.Win32.SystemEvents/4.6.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
       "MySql.Data/8.0.20": {
@@ -449,16 +455,75 @@
           "lib/netstandard2.1/Zstandard.Net.dll": {}
         }
       },
+      "Npgsql/4.1.3.1": {
+        "dependencies": {
+          "System.Runtime.CompilerServices.Unsafe": "4.6.0"
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Npgsql.dll": {
+            "assemblyVersion": "4.1.3.1",
+            "fileVersion": "4.1.3.1"
+          }
+        },
+        "compile": {
+          "lib/netcoreapp3.0/Npgsql.dll": {}
+        }
+      },
+      "Oracle.ManagedDataAccess.Core/2.19.70": {
+        "runtime": {
+          "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {
+            "assemblyVersion": "2.0.19.1",
+            "fileVersion": "2.0.19.1"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Oracle.ManagedDataAccess.dll": {}
+        }
+      },
       "runtime.native.System/4.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+        "dependencies": {
+          "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x64.runtime.native.System.Data.SqlClient.sni": "4.4.0",
+          "runtime.win-x86.runtime.native.System.Data.SqlClient.sni": "4.4.0"
         }
       },
       "runtime.native.System.Security.Cryptography/4.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
+        }
+      },
+      "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-arm64/native/sni.dll": {
+            "rid": "win-arm64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x64/native/sni.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
+        }
+      },
+      "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+        "runtimeTargets": {
+          "runtimes/win-x86/native/sni.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "4.6.25512.1"
+          }
         }
       },
       "SSH.NET/2016.1.0": {
@@ -514,7 +579,7 @@
       "System.Buffers/4.5.0": {},
       "System.Collections/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -547,23 +612,106 @@
           "ref/netstandard2.0/System.Configuration.ConfigurationManager.dll": {}
         }
       },
+      "System.Data.SqlClient/4.8.1": {
+        "dependencies": {
+          "Microsoft.Win32.Registry": "4.7.0",
+          "System.Security.Principal.Windows": "4.7.0",
+          "runtime.native.System.Data.SqlClient.sni": "4.7.0"
+        },
+        "runtime": {
+          "lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "unix",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          },
+          "runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "4.6.1.1",
+            "fileVersion": "4.700.20.6702"
+          }
+        },
+        "compile": {
+          "ref/netcoreapp2.1/System.Data.SqlClient.dll": {}
+        }
+      },
+      "System.Data.SQLite.Core/1.0.113.1": {
+        "runtime": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {
+            "assemblyVersion": "1.0.113.0",
+            "fileVersion": "1.0.113.0"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/linux-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/linux-x64/native/netstandard2.1/SQLite.Interop.dll": {
+            "rid": "linux-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/osx-x64/native/netstandard2.1/SQLite.Interop.dll": {
+            "rid": "osx-x64",
+            "assetType": "native",
+            "fileVersion": "0.0.0.0"
+          },
+          "runtimes/win-x64/native/netstandard2.0/SQLite.Interop.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.113.0"
+          },
+          "runtimes/win-x64/native/netstandard2.1/SQLite.Interop.dll": {
+            "rid": "win-x64",
+            "assetType": "native",
+            "fileVersion": "1.0.113.0"
+          },
+          "runtimes/win-x86/native/netstandard2.0/SQLite.Interop.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.113.0"
+          },
+          "runtimes/win-x86/native/netstandard2.1/SQLite.Interop.dll": {
+            "rid": "win-x86",
+            "assetType": "native",
+            "fileVersion": "1.0.113.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/System.Data.SQLite.dll": {}
+        }
+      },
       "System.Diagnostics.Debug/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.Tools/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Diagnostics.TraceSource/4.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Debug": "4.0.11",
           "System.Globalization": "4.0.11",
@@ -576,14 +724,14 @@
       },
       "System.Diagnostics.Tracing/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Drawing.Common/4.6.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.Win32.SystemEvents": "4.6.0"
         }
       },
@@ -608,14 +756,14 @@
       },
       "System.Globalization/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.IO/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0",
@@ -624,7 +772,7 @@
       },
       "System.IO.FileSystem/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.IO": "4.3.0",
           "System.IO.FileSystem.Primitives": "4.0.1",
@@ -672,7 +820,7 @@
       "System.Memory/4.5.3": {},
       "System.Net.NameResolution/4.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "System.Collections": "4.0.11",
           "System.Diagnostics.Tracing": "4.1.0",
           "System.Globalization": "4.0.11",
@@ -682,7 +830,7 @@
           "System.Runtime.Extensions": "4.1.0",
           "System.Runtime.Handles": "4.0.1",
           "System.Runtime.InteropServices": "4.1.0",
-          "System.Security.Principal.Windows": "4.6.0",
+          "System.Security.Principal.Windows": "4.7.0",
           "System.Threading": "4.0.11",
           "System.Threading.Tasks": "4.3.0",
           "runtime.native.System": "4.0.0"
@@ -690,7 +838,7 @@
       },
       "System.Net.Primitives/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Handles": "4.0.1"
@@ -698,7 +846,7 @@
       },
       "System.Net.Sockets/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.IO": "4.3.0",
           "System.Net.Primitives": "4.0.11",
@@ -717,7 +865,7 @@
       },
       "System.Reflection/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.IO": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -750,7 +898,7 @@
       },
       "System.Reflection.Extensions/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Reflection": "4.3.0",
           "System.Runtime": "4.3.0"
@@ -758,7 +906,7 @@
       },
       "System.Reflection.Primitives/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -771,7 +919,7 @@
       },
       "System.Resources.ResourceManager/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Globalization": "4.0.11",
           "System.Reflection": "4.3.0",
@@ -780,28 +928,28 @@
       },
       "System.Runtime/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0"
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
       "System.Runtime.Extensions/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.Handles/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Runtime.InteropServices/4.1.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Reflection": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
@@ -817,15 +965,15 @@
           "System.Runtime.Extensions": "4.1.0"
         }
       },
-      "System.Security.AccessControl/4.6.0": {
+      "System.Security.AccessControl/4.7.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
-          "System.Security.Principal.Windows": "4.6.0"
+          "Microsoft.NETCore.Platforms": "3.1.0",
+          "System.Security.Principal.Windows": "4.7.0"
         }
       },
       "System.Security.Cryptography.Algorithms/4.2.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "System.Collections": "4.0.11",
           "System.IO": "4.3.0",
           "System.Resources.ResourceManager": "4.0.1",
@@ -842,7 +990,7 @@
       },
       "System.Security.Cryptography.Encoding/4.0.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "System.Collections": "4.0.11",
           "System.Collections.Concurrent": "4.0.12",
           "System.Linq": "4.1.0",
@@ -885,26 +1033,26 @@
       },
       "System.Security.Permissions/4.6.0": {
         "dependencies": {
-          "System.Security.AccessControl": "4.6.0",
+          "System.Security.AccessControl": "4.7.0",
           "System.Windows.Extensions": "4.6.0"
         }
       },
-      "System.Security.Principal.Windows/4.6.0": {},
+      "System.Security.Principal.Windows/4.7.0": {},
       "System.Text.Encoding/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
       },
       "System.Text.Encoding.CodePages/4.4.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0"
+          "Microsoft.NETCore.Platforms": "3.1.0"
         }
       },
       "System.Text.Encoding.Extensions/4.0.11": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0",
           "System.Text.Encoding": "4.3.0"
@@ -928,7 +1076,7 @@
       },
       "System.Threading.Tasks/4.3.0": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -953,7 +1101,7 @@
       },
       "System.Threading.Timer/4.0.1": {
         "dependencies": {
-          "Microsoft.NETCore.Platforms": "3.0.0",
+          "Microsoft.NETCore.Platforms": "3.1.0",
           "Microsoft.NETCore.Targets": "1.1.0",
           "System.Runtime": "4.3.0"
         }
@@ -1120,7 +1268,7 @@
           "Rally.Framework.Core.DomainModel.dll": {}
         }
       },
-      "Rally.Framework.Facade/1.0.0": {
+      "Rally.Framework.Facade.Standard/1.0.0": {
         "dependencies": {
           "Rally.Framework.Account": "1.0.0",
           "Rally.Framework.Authentication": "1.0.0",
@@ -1134,21 +1282,22 @@
           "Rally.Framework.Logging": "1.0.0",
           "Rally.Framework.Maintenance": "1.0.0",
           "Rally.Framework.Nuclide": "1.0.0",
+          "Rally.Framework.Printing": "1.0.0",
           "Rally.Framework.Protocol": "1.0.0",
           "Rally.Framework.System": "1.0.0",
           "Rally.Lib.Persistence.Core": "1.0.0",
           "Rally.Lib.Persistence.MySQL.Standard": "1.0.0",
-          "Rally.Lib.Persistence.Oracle": "1.0.0",
-          "Rally.Lib.Persistence.PostgreSQL": "1.0.0",
-          "Rally.Lib.Persistence.SQLServer": "1.0.0",
-          "Rally.Lib.Persistence.SQLite": "1.0.0",
+          "Rally.Lib.Persistence.Oracle.Standard": "1.0.0",
+          "Rally.Lib.Persistence.PostgreSQL.Standard": "1.0.0",
+          "Rally.Lib.Persistence.SQLServer.Standard": "1.0.0",
+          "Rally.Lib.Persistence.SQLite.Standard": "1.0.0",
           "Rally.Lib.Utility.Xml": "1.0.0"
         },
         "runtime": {
-          "Rally.Framework.Facade.dll": {}
+          "Rally.Framework.Facade.Standard.dll": {}
         },
         "compile": {
-          "Rally.Framework.Facade.dll": {}
+          "Rally.Framework.Facade.Standard.dll": {}
         }
       },
       "Rally.Framework.File/1.0.0": {
@@ -1215,6 +1364,18 @@
           "Rally.Framework.Nuclide.dll": {}
         }
       },
+      "Rally.Framework.Printing/1.0.0": {
+        "dependencies": {
+          "Rally.Framework.Core": "1.0.0",
+          "Rally.Framework.Core.DomainModel": "1.0.0"
+        },
+        "runtime": {
+          "Rally.Framework.Printing.dll": {}
+        },
+        "compile": {
+          "Rally.Framework.Printing.dll": {}
+        }
+      },
       "Rally.Framework.Protocol/1.0.0": {
         "dependencies": {
           "Rally.Framework.Core": "1.0.0",
@@ -1269,48 +1430,52 @@
           "Rally.Lib.Persistence.MySQL.Standard.dll": {}
         }
       },
-      "Rally.Lib.Persistence.Oracle/1.0.0": {
+      "Rally.Lib.Persistence.Oracle.Standard/1.0.0": {
         "dependencies": {
+          "Oracle.ManagedDataAccess.Core": "2.19.70",
           "Rally.Lib.Persistence.Core": "1.0.0"
         },
         "runtime": {
-          "Rally.Lib.Persistence.Oracle.dll": {}
+          "Rally.Lib.Persistence.Oracle.Standard.dll": {}
         },
         "compile": {
-          "Rally.Lib.Persistence.Oracle.dll": {}
+          "Rally.Lib.Persistence.Oracle.Standard.dll": {}
         }
       },
-      "Rally.Lib.Persistence.PostgreSQL/1.0.0": {
+      "Rally.Lib.Persistence.PostgreSQL.Standard/1.0.0": {
         "dependencies": {
+          "Npgsql": "4.1.3.1",
           "Rally.Lib.Persistence.Core": "1.0.0"
         },
         "runtime": {
-          "Rally.Lib.Persistence.PostgreSQL.dll": {}
+          "Rally.Lib.Persistence.PostgreSQL.Standard.dll": {}
         },
         "compile": {
-          "Rally.Lib.Persistence.PostgreSQL.dll": {}
+          "Rally.Lib.Persistence.PostgreSQL.Standard.dll": {}
         }
       },
-      "Rally.Lib.Persistence.SQLite/1.0.0": {
+      "Rally.Lib.Persistence.SQLite.Standard/1.0.0": {
         "dependencies": {
-          "Rally.Lib.Persistence.Core": "1.0.0"
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "System.Data.SQLite.Core": "1.0.113.1"
         },
         "runtime": {
-          "Rally.Lib.Persistence.SQLite.dll": {}
+          "Rally.Lib.Persistence.SQLite.Standard.dll": {}
         },
         "compile": {
-          "Rally.Lib.Persistence.SQLite.dll": {}
+          "Rally.Lib.Persistence.SQLite.Standard.dll": {}
         }
       },
-      "Rally.Lib.Persistence.SQLServer/1.0.0": {
+      "Rally.Lib.Persistence.SQLServer.Standard/1.0.0": {
         "dependencies": {
-          "Rally.Lib.Persistence.Core": "1.0.0"
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "System.Data.SqlClient": "4.8.1"
         },
         "runtime": {
-          "Rally.Lib.Persistence.SQLServer.dll": {}
+          "Rally.Lib.Persistence.SQLServer.Standard.dll": {}
         },
         "compile": {
-          "Rally.Lib.Persistence.SQLServer.dll": {}
+          "Rally.Lib.Persistence.SQLServer.Standard.dll": {}
         }
       },
       "Rally.Lib.Utility.Common/1.0.0": {
@@ -1345,35 +1510,123 @@
           }
         }
       },
-      "Oracle.ManagedDataAccess/4.122.19.1": {
+      "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
         "runtime": {
-          "Oracle.ManagedDataAccess.dll": {
-            "assemblyVersion": "4.122.19.1",
-            "fileVersion": "4.122.19.1"
+          "CrystalDecisions.CrystalReports.Engine.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
           }
         }
       },
-      "Npgsql/4.1.3.1": {
+      "CrystalDecisions.Shared/13.0.4000.0": {
         "runtime": {
-          "Npgsql.dll": {
-            "assemblyVersion": "4.1.3.1",
-            "fileVersion": "4.1.3.1"
+          "CrystalDecisions.Shared.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
           }
         }
       },
-      "System.Data.SQLite/1.0.112.0": {
+      "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
         "runtime": {
-          "System.Data.SQLite.dll": {
-            "assemblyVersion": "1.0.112.0",
-            "fileVersion": "1.0.112.0"
+          "CrystalDecisions.ReportAppServer.DataDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
           }
         }
       },
-      "Microsoft.Bcl.AsyncInterfaces/1.0.0.0": {
+      "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
         "runtime": {
-          "Microsoft.Bcl.AsyncInterfaces.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "4.700.19.46214"
+          "CrystalDecisions.ReportAppServer.ClientDoc.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.ReportDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.Controllers.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommLayer.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.DataSetConversion.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.Prompting.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.XmlSerialize.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CubeDefModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommonObjectModel.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.ObjectFactory.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
+        "runtime": {
+          "CrystalDecisions.ReportAppServer.CommonControls.dll": {
+            "assemblyVersion": "13.0.4000.0",
+            "fileVersion": "13.0.27.3480"
+          }
+        }
+      },
+      "stdole/7.0.3300.0": {
+        "runtime": {
+          "stdole.dll": {
+            "assemblyVersion": "7.0.3300.0",
+            "fileVersion": "7.0.9466.1"
           }
         }
       },
@@ -2133,7 +2386,7 @@
         },
         "compileOnly": true
       },
-      "Microsoft.Win32.Registry/4.1.3.0": {
+      "Microsoft.Win32.Registry.Reference/4.1.3.0": {
         "compile": {
           "Microsoft.Win32.Registry.dll": {}
         },
@@ -3119,12 +3372,12 @@
       "path": "microsoft.csharp/4.0.1",
       "hashPath": "microsoft.csharp.4.0.1.nupkg.sha512"
     },
-    "Microsoft.NETCore.Platforms/3.0.0": {
+    "Microsoft.NETCore.Platforms/3.1.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-TsETIgVJb/AKoYfSP+iCxkuly5d3inZjTdx/ItZLk2CxY85v8083OBS3uai84kK3/baLnS5/b5XGs6zR7SuuHQ==",
-      "path": "microsoft.netcore.platforms/3.0.0",
-      "hashPath": "microsoft.netcore.platforms.3.0.0.nupkg.sha512"
+      "sha512": "sha512-z7aeg8oHln2CuNulfhiLYxCVMPEwBl3rzicjvIX+4sUuCwvXw5oXQEtbiU2c0z4qYL5L3Kmx0mMA/+t/SbY67w==",
+      "path": "microsoft.netcore.platforms/3.1.0",
+      "hashPath": "microsoft.netcore.platforms.3.1.0.nupkg.sha512"
     },
     "Microsoft.NETCore.Targets/1.1.0": {
       "type": "package",
@@ -3140,6 +3393,13 @@
       "path": "microsoft.visualstudio.azure.containers.tools.targets/1.10.9",
       "hashPath": "microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512"
     },
+    "Microsoft.Win32.Registry/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-KSrRMb5vNi0CWSGG1++id2ZOs/1QhRqROt+qgbEAdQuGjGrFcl4AOl4/exGPUYz2wUnU42nvJqon1T3U0kPXLA==",
+      "path": "microsoft.win32.registry/4.7.0",
+      "hashPath": "microsoft.win32.registry.4.7.0.nupkg.sha512"
+    },
     "Microsoft.Win32.SystemEvents/4.6.0": {
       "type": "package",
       "serviceable": true,
@@ -3154,6 +3414,20 @@
       "path": "mysql.data/8.0.20",
       "hashPath": "mysql.data.8.0.20.nupkg.sha512"
     },
+    "Npgsql/4.1.3.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-354pl/Picmt5/AIrm8urFwtxfK4n4NbmfBnLA9yvP8VtILSQF3/sFo3+lGuz+q4iyD18QeNFy0NMNBzsocFVlw==",
+      "path": "npgsql/4.1.3.1",
+      "hashPath": "npgsql.4.1.3.1.nupkg.sha512"
+    },
+    "Oracle.ManagedDataAccess.Core/2.19.70": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-bpsnNrSc/dtKx5KSrnG1CTYlAzNzWV0BVmb5HbcPDgMY5FfGLKi5W96e7UHtSq6vniKIt7ptTie9uWGUqOyj4A==",
+      "path": "oracle.manageddataaccess.core/2.19.70",
+      "hashPath": "oracle.manageddataaccess.core.2.19.70.nupkg.sha512"
+    },
     "runtime.native.System/4.0.0": {
       "type": "package",
       "serviceable": true,
@@ -3161,12 +3435,40 @@
       "path": "runtime.native.system/4.0.0",
       "hashPath": "runtime.native.system.4.0.0.nupkg.sha512"
     },
+    "runtime.native.System.Data.SqlClient.sni/4.7.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9kyFSIdN3T0qjDQ2R0HRXYIhS3l5psBzQi6qqhdLz+SzFyEy4sVxNOke+yyYv8Cu8rPER12c3RDjLT8wF3WBYQ==",
+      "path": "runtime.native.system.data.sqlclient.sni/4.7.0",
+      "hashPath": "runtime.native.system.data.sqlclient.sni.4.7.0.nupkg.sha512"
+    },
     "runtime.native.System.Security.Cryptography/4.0.0": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-2CQK0jmO6Eu7ZeMgD+LOFbNJSXHFVQbCJJkEyEwowh1SCgYnrn9W9RykMfpeeVGw7h4IBvYikzpGUlmZTUafJw==",
       "path": "runtime.native.system.security.cryptography/4.0.0",
       "hashPath": "runtime.native.system.security.cryptography.4.0.0.nupkg.sha512"
+    },
+    "runtime.win-arm64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LbrynESTp3bm5O/+jGL8v0Qg5SJlTV08lpIpFesXjF6uGNMWqFnUQbYBJwZTeua6E/Y7FIM1C54Ey1btLWupdg==",
+      "path": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x64.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-38ugOfkYJqJoX9g6EYRlZB5U2ZJH51UP8ptxZgdpS07FgOEToV+lS11ouNK2PM12Pr6X/PpT5jK82G3DwH/SxQ==",
+      "path": "runtime.win-x64.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
+    },
+    "runtime.win-x86.runtime.native.System.Data.SqlClient.sni/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YhEdSQUsTx+C8m8Bw7ar5/VesXvCFMItyZF7G1AUY+OM0VPZUOeAVpJ4Wl6fydBGUYZxojTDR3I6Bj/+BPkJNA==",
+      "path": "runtime.win-x86.runtime.native.system.data.sqlclient.sni/4.4.0",
+      "hashPath": "runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512"
     },
     "SSH.NET/2016.1.0": {
       "type": "package",
@@ -3209,6 +3511,20 @@
       "sha512": "sha512-jz3TWKMAeuDEyrPCK5Jyt4bzQcmzUIMcY9Ud6PkElFxTfnsihV+9N/UCqvxe1z5gc7jMYAnj7V1COMS9QKIuHQ==",
       "path": "system.configuration.configurationmanager/4.4.1",
       "hashPath": "system.configuration.configurationmanager.4.4.1.nupkg.sha512"
+    },
+    "System.Data.SqlClient/4.8.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-HKLykcv6eZLbLnSMnlQ6Os4+UAmFE+AgYm92CTvJYeTOBtOYusX3qu8OoGhFrnKZax91UcLcDo5vPrqvJUTSNQ==",
+      "path": "system.data.sqlclient/4.8.1",
+      "hashPath": "system.data.sqlclient.4.8.1.nupkg.sha512"
+    },
+    "System.Data.SQLite.Core/1.0.113.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ymvB558/Tgdxj2MzJjhDvPLJ/S2WgG1KzQ1cmqzsW3+YQ5DO+eAU04OpY5deK6fndM+DEU8+lwmmYHxxUS2Qvw==",
+      "path": "system.data.sqlite.core/1.0.113.1",
+      "hashPath": "system.data.sqlite.core.1.0.113.1.nupkg.sha512"
     },
     "System.Diagnostics.Debug/4.0.11": {
       "type": "package",
@@ -3427,12 +3743,12 @@
       "path": "system.runtime.numerics/4.0.1",
       "hashPath": "system.runtime.numerics.4.0.1.nupkg.sha512"
     },
-    "System.Security.AccessControl/4.6.0": {
+    "System.Security.AccessControl/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-gmlk6khICtVhiUnVBBtlsH0H/5QFDqhTZgtpp3AX14wWE6OIE+BX95NLD+X4AolXnIy/oXpNNmXYnsNfW1KuDQ==",
-      "path": "system.security.accesscontrol/4.6.0",
-      "hashPath": "system.security.accesscontrol.4.6.0.nupkg.sha512"
+      "sha512": "sha512-JECvTt5aFF3WT3gHpfofL2MNNP6v84sxtXxpqhLBCcDRzqsPBmHhQ6shv4DwwN2tRlzsUxtb3G9M3763rbXKDg==",
+      "path": "system.security.accesscontrol/4.7.0",
+      "hashPath": "system.security.accesscontrol.4.7.0.nupkg.sha512"
     },
     "System.Security.Cryptography.Algorithms/4.2.0": {
       "type": "package",
@@ -3469,12 +3785,12 @@
       "path": "system.security.permissions/4.6.0",
       "hashPath": "system.security.permissions.4.6.0.nupkg.sha512"
     },
-    "System.Security.Principal.Windows/4.6.0": {
+    "System.Security.Principal.Windows/4.7.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-Mdukseovp0YIGaz16FMH6nbfgZkrCFOJbtXQptv0aeBO9h775Ilb9+TDwLVTKikoW7y7CY7lpoXl9zmZ5G3ndA==",
-      "path": "system.security.principal.windows/4.6.0",
-      "hashPath": "system.security.principal.windows.4.6.0.nupkg.sha512"
+      "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
+      "path": "system.security.principal.windows/4.7.0",
+      "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
     },
     "System.Text.Encoding/4.3.0": {
       "type": "package",
@@ -3616,7 +3932,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Rally.Framework.Facade/1.0.0": {
+    "Rally.Framework.Facade.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3646,6 +3962,11 @@
       "serviceable": false,
       "sha512": ""
     },
+    "Rally.Framework.Printing/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Rally.Framework.Protocol/1.0.0": {
       "type": "project",
       "serviceable": false,
@@ -3671,22 +3992,22 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Rally.Lib.Persistence.Oracle/1.0.0": {
+    "Rally.Lib.Persistence.Oracle.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Rally.Lib.Persistence.PostgreSQL/1.0.0": {
+    "Rally.Lib.Persistence.PostgreSQL.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Rally.Lib.Persistence.SQLite/1.0.0": {
+    "Rally.Lib.Persistence.SQLite.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
-    "Rally.Lib.Persistence.SQLServer/1.0.0": {
+    "Rally.Lib.Persistence.SQLServer.Standard/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
@@ -3711,22 +4032,77 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Oracle.ManagedDataAccess/4.122.19.1": {
+    "CrystalDecisions.CrystalReports.Engine/13.0.4000.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Npgsql/4.1.3.1": {
+    "CrystalDecisions.Shared/13.0.4000.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "System.Data.SQLite/1.0.112.0": {
+    "CrystalDecisions.ReportAppServer.DataDefModel/13.0.4000.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Bcl.AsyncInterfaces/1.0.0.0": {
+    "CrystalDecisions.ReportAppServer.ClientDoc/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.ReportDefModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.Controllers/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommLayer/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.DataSetConversion/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.Prompting/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.XmlSerialize/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CubeDefModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommonObjectModel/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.ObjectFactory/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "CrystalDecisions.ReportAppServer.CommonControls/13.0.4000.0": {
+      "type": "reference",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "stdole/7.0.3300.0": {
       "type": "reference",
       "serviceable": false,
       "sha512": ""
@@ -4361,7 +4737,7 @@
       "serviceable": false,
       "sha512": ""
     },
-    "Microsoft.Win32.Registry/4.1.3.0": {
+    "Microsoft.Win32.Registry.Reference/4.1.3.0": {
       "type": "referenceassembly",
       "serviceable": false,
       "sha512": ""

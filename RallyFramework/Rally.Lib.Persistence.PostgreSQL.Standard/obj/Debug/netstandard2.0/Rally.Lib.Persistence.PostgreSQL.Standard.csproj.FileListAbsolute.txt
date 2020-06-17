@@ -1,0 +1,12 @@
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.deps.json
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.AssemblyInfoInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.AssemblyInfo.cs
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.csproj.CopyComplete
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.PostgreSQL.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.PostgreSQL.Standard.pdb

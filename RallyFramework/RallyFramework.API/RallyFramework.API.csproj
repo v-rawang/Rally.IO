@@ -13,7 +13,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Rally.Framework.Core.DomainModel\Rally.Framework.Core.DomainModel.csproj" />
     <ProjectReference Include="..\Rally.Framework.Core\Rally.Framework.Core\Rally.Framework.Core.csproj" />
-    <ProjectReference Include="..\Rally.Framework.Facade\Rally.Framework.Facade.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Facade.Standard\Rally.Framework.Facade.Standard.csproj" />
   </ItemGroup>
 
 

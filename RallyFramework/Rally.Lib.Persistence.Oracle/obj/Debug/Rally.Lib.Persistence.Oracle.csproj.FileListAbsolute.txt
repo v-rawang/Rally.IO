@@ -4,7 +4,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\bin\Debug\Ral
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\bin\Debug\Oracle.ManagedDataAccess.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\bin\Debug\Rally.Lib.Persistence.Core.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\bin\Debug\Rally.Lib.Persistence.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\obj\Debug\Rally.Lib.Persistence.Oracle.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\obj\Debug\Rally.Lib.Persistence.Oracle.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\obj\Debug\Rally.Lib.Persistence.Oracle.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Oracle\obj\Debug\Rally.Lib.Persistence.Oracle.dll

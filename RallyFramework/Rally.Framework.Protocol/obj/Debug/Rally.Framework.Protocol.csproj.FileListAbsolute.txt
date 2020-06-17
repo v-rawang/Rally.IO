@@ -6,8 +6,8 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\bin\Debug\Rally.L
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\bin\Debug\Rally.Framework.Core.DomainModel.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\bin\Debug\Rally.Framework.Core.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\bin\Debug\Rally.Lib.Utility.Common.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csprojAssemblyReference.cache

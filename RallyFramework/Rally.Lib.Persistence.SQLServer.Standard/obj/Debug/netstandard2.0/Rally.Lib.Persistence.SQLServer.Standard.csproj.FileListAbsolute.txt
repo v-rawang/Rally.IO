@@ -1,0 +1,12 @@
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.deps.json
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\bin\Debug\netstandard2.0\Rally.Lib.Persistence.Core.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.csprojAssemblyReference.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.AssemblyInfoInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.AssemblyInfo.cs
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.csproj.CopyComplete
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.dll
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer.Standard\obj\Debug\netstandard2.0\Rally.Lib.Persistence.SQLServer.Standard.pdb

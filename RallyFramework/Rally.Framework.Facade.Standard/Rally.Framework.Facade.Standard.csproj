@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Rally.Framework.Account\Rally.Framework.Account.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Authentication\Rally.Framework.Authentication.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Authorization\Rally.Framework.Authorization.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Camera\Rally.Framework.Camera.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Content\Rally.Framework.Content.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Core.DomainModel\Rally.Framework.Core.DomainModel.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Core\Rally.Framework.Core\Rally.Framework.Core.csproj" />
+    <ProjectReference Include="..\Rally.Framework.File\Rally.Framework.File.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Instrument\Rally.Framework.Instrument.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Logging\Rally.Framework.Logging.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Maintenance\Rally.Framework.Maintenance.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Nuclide\Rally.Framework.Nuclide.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Printing\Rally.Framework.Printing.csproj" />
+    <ProjectReference Include="..\Rally.Framework.Protocol\Rally.Framework.Protocol.csproj" />
+    <ProjectReference Include="..\Rally.Framework.System\Rally.Framework.System.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.Core\Rally.Lib.Persistence.Core.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.MySQL.Standard\Rally.Lib.Persistence.MySQL.Standard.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.Oracle.Standard\Rally.Lib.Persistence.Oracle.Standard.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.PostgreSQL.Standard\Rally.Lib.Persistence.PostgreSQL.Standard.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.SQLite.Standard\Rally.Lib.Persistence.SQLite.Standard.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Persistence.SQLServer.Standard\Rally.Lib.Persistence.SQLServer.Standard.csproj" />
+    <ProjectReference Include="..\Rally.Lib.Utility.Xml\Rally.Lib.Utility.Xml.csproj" />
+  </ItemGroup>
+
+</Project>

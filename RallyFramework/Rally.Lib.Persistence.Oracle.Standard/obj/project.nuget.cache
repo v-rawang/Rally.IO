@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "plYbHf2oeMPs7f6VezMySxtktqtbPRBIqI3px/11kbb54QxvIjW9ZykdPZDcVFBiaye1iFk6bAV4BQhhGu1BmA==",
+  "success": true,
+  "projectFilePath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Oracle.Standard\\Rally.Lib.Persistence.Oracle.Standard.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\crazy\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\crazy\\.nuget\\packages\\oracle.manageddataaccess.core\\2.19.70\\oracle.manageddataaccess.core.2.19.70.nupkg.sha512"
+  ],
+  "logs": []
+}

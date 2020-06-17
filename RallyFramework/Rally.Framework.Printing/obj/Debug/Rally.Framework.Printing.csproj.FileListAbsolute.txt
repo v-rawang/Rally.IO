@@ -53,7 +53,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\bin\Debug\Shockwa
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\bin\Debug\stdole.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\bin\Debug\Rally.Framework.Core.DomainModel.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\bin\Debug\Rally.Framework.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Printing\obj\Debug\Rally.Framework.Printing.dll

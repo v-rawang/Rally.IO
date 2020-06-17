@@ -136,7 +136,17 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Nuclide", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RallyFramework.API", "RallyFramework.API\RallyFramework.API.csproj", "{6092BE5E-F19F-4ABF-9247-121202C00719}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.MySQL.Standard", "Rally.Lib.Persistence.MySQL.Standard\Rally.Lib.Persistence.MySQL.Standard.csproj", "{6C4D460F-F944-4EE9-A794-9E479843A31E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Rally.Lib.Persistence.MySQL.Standard", "Rally.Lib.Persistence.MySQL.Standard\Rally.Lib.Persistence.MySQL.Standard.csproj", "{6C4D460F-F944-4EE9-A794-9E479843A31E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.Oracle.Standard", "Rally.Lib.Persistence.Oracle.Standard\Rally.Lib.Persistence.Oracle.Standard.csproj", "{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.PostgreSQL.Standard", "Rally.Lib.Persistence.PostgreSQL.Standard\Rally.Lib.Persistence.PostgreSQL.Standard.csproj", "{23513395-235A-4D95-A502-C32C5480BF0A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.SQLite.Standard", "Rally.Lib.Persistence.SQLite.Standard\Rally.Lib.Persistence.SQLite.Standard.csproj", "{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Lib.Persistence.SQLServer.Standard", "Rally.Lib.Persistence.SQLServer.Standard\Rally.Lib.Persistence.SQLServer.Standard.csproj", "{02542B70-7A16-4704-B913-A113315E5824}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rally.Framework.Facade.Standard", "Rally.Framework.Facade.Standard\Rally.Framework.Facade.Standard.csproj", "{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -400,6 +410,26 @@ Global
 		{6C4D460F-F944-4EE9-A794-9E479843A31E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4D460F-F944-4EE9-A794-9E479843A31E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4D460F-F944-4EE9-A794-9E479843A31E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D4ADAB-B37A-4276-8320-B3A1A02F5D0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23513395-235A-4D95-A502-C32C5480BF0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23513395-235A-4D95-A502-C32C5480BF0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23513395-235A-4D95-A502-C32C5480BF0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23513395-235A-4D95-A502-C32C5480BF0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A0AFA06-D25B-4C1A-8DC7-032182E4D54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02542B70-7A16-4704-B913-A113315E5824}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02542B70-7A16-4704-B913-A113315E5824}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02542B70-7A16-4704-B913-A113315E5824}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02542B70-7A16-4704-B913-A113315E5824}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7A50A67C-5AAA-4C2A-A26E-617705C35EB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

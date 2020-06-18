@@ -1,4 +1,4 @@
-use newford;
+use db_edge_nuclide;
 
 CREATE TABLE Accounts (
   Id nvarchar(128) NOT NULL,

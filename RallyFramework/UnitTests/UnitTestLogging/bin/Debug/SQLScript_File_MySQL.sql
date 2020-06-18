@@ -1,4 +1,4 @@
-use newford;
+use db_edge_nuclide;
 
 DROP TABLE IF EXISTS `files`;
 

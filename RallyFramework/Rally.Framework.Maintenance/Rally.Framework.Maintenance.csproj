@@ -49,6 +49,7 @@
     <Content Include="SQLScript_Maintenance_MySQL.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="SQLScript_Maintenance_PostgreSQL.sql" />
     <Content Include="SQLScript_Maintenance_SQLite.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

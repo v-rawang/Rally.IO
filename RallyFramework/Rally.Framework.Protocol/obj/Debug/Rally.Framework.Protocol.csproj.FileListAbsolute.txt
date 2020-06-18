@@ -10,3 +10,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.F
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol\obj\Debug\Rally.Framework.Protocol.csprojAssemblyReference.cache

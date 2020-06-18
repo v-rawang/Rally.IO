@@ -53,6 +53,7 @@
     <Content Include="SQLScript_Authorization_MySQL.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="SQLScript_Authorization_PostgreSQL.sql" />
     <Content Include="SQLScript_Authorization_SQLite.sql">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>

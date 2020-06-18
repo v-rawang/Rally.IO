@@ -1,4 +1,4 @@
-use newford;
+use db_edge_nuclide;
 
 DROP TABLE IF EXISTS `instruments`;
 DROP TABLE IF EXISTS `instrument_commnunication_settings`;

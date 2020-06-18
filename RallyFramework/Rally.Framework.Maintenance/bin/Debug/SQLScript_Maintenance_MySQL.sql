@@ -1,4 +1,4 @@
-use newford;
+use db_edge_nuclide;
 
 DROP TABLE IF EXISTS `maintenance_orders`;
 DROP TABLE IF EXISTS `tb_mon_MaintenanceOrderLineitems`;

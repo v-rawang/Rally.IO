@@ -5,7 +5,7 @@
   PRIMARY KEY (`Id`)
 );*/
 
-use newford;
+use db_edge_nuclide;
 
 CREATE TABLE `users` (
   `Id` varchar(128) NOT NULL,

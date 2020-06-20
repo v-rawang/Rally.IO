@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Rally.Lib.Persistence.Core;
 using Rally.Framework.Core;
+using Rally.Lib.Utility.Common;
 
 namespace Rally.Framework.Authorization
 {
@@ -215,6 +216,13 @@ namespace Rally.Framework.Authorization
             string sqlTxtSelectRoleActors = "select RoleId as RoleId, ActorId as ActorId from RoleActors where ActorId = @ActorId";
             string sqlTxtSelectRoleDataScopes = "select RoleId as RoleId, DataScopeId as DataScopeId, ScopeValue as ScopeValue from RoleDataScopes";
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxtSelectRoleDataScopes = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleDataScopes);
+                sqlTxtSelectRoleActors = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleActors);
+                sqlTxtSelectRoleDataScopes = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleDataScopes);
+            }
+
             IDictionary<string, IList<object>> dataScopeValues = new Dictionary<string, List<object>>() as IDictionary<string, IList<object>>;
             IDictionary<string, string> dataScopeTypes = new Dictionary<string, string>();
             string dataIndetifier = null;
@@ -300,6 +308,13 @@ namespace Rally.Framework.Authorization
             string sqlTxtSelectDataScopes = "select Id as Id, ScopeName as ScopeName, ScopeType as ScopeType, DataType as DataType, DataIdentifier as DataIdentifier from DataScopes where DataType = @DataType";
             string sqlTxtSelectRoleActors = "select RoleId as RoleId, ActorId as ActorId from RoleActors where ActorId = @ActorId";
             string sqlTxtSelectRoleDataScopes = "select RoleId as RoleId, DataScopeId as DataScopeId, ScopeValue as ScopeValue from RoleDataScopes";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxtSelectRoleDataScopes = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleDataScopes);
+                sqlTxtSelectRoleActors = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleActors);
+                sqlTxtSelectRoleDataScopes = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleDataScopes);
+            }
 
             IDictionary<string, IList<object>> dataScopeValues = new Dictionary<string, List<object>>() as IDictionary<string, IList<object>>;
             IDictionary<string, string> dataScopeTypes = new Dictionary<string, string>();
@@ -393,6 +408,11 @@ namespace Rally.Framework.Authorization
                 sqlParam = new Dictionary<string, object>() { { "@DataType", DataTypeName } };
             }
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt,  sqlParam);
 
             if (dbResult != null && dbResult.Count > 0)
@@ -426,6 +446,11 @@ namespace Rally.Framework.Authorization
                 sqlParam = new Dictionary<string, object>() { { "@DataType", DataTypeName } };
             }
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, sqlParam);
 
             if (dbResult != null && dbResult.Count > 0)
@@ -450,6 +475,12 @@ namespace Rally.Framework.Authorization
 
             string sqlTxtSelectRoleActors = "select RoleId as RoleId, ActorId as ActorId from RoleActors where ActorId = @ActorId";
             string sqlTxtSelectRoleOps = "select RoleId as RoleId, OperationId as OperationId from RoleOperations where OperationId = @OperationId";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxtSelectRoleActors = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleActors);
+                sqlTxtSelectRoleOps = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxtSelectRoleOps);
+            }
 
             IList<IDictionary<string, object>> dbResultRoleActors = this.dmlOperable.ExeReader(sqlTxtSelectRoleActors, new Dictionary<string, object>() { { "@ActorId", Actor } });
 
@@ -654,6 +685,11 @@ namespace Rally.Framework.Authorization
 
             string sqlTxt = "select Id as Id, Name as Name, RoleType as RoleType, Description as Description from roles";
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, null);
 
             return dbResult;
@@ -664,6 +700,11 @@ namespace Rally.Framework.Authorization
             //string sqlTxt = "select Id, RoleId, ActorId from roleactors where RoleId = @RoleId";
 
             string sqlTxt = "select Id as Id, RoleId as RoleId, ActorId as ActorId from roleactors where RoleId = @RoleId";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>(){ { "@RoleId", RoleID} });
 
@@ -676,6 +717,11 @@ namespace Rally.Framework.Authorization
 
             string sqlTxt = "select Id as Id, RoleId as RoleId, ActorId as ActorId from roleactors where ActorId = @ActorId";
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { { "@ActorId", ActorID } });
 
             return dbResult;
@@ -686,6 +732,11 @@ namespace Rally.Framework.Authorization
             //string sqlTxt = "select Id, Name, DataType from operations";
 
             string sqlTxt = "select Id as Id, Name as Name, DataType as DataType from operations";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, null);
 
@@ -707,6 +758,11 @@ namespace Rally.Framework.Authorization
                 sqlParam = new Dictionary<string, object> { { "@RoleId", RoleID} };
             }
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, sqlParam);
 
             return dbResult;
@@ -716,6 +772,11 @@ namespace Rally.Framework.Authorization
         {
             //string sqlTxt = "select Id, ObjectId, ActorId, OperationId from objectoperationauthitems";
             string sqlTxt = "select Id as Id, ObjectId as ObjectId, ActorId as ActorId, OperationId as OperationId from objectoperationauthitems";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, null);
 
@@ -733,9 +794,14 @@ namespace Rally.Framework.Authorization
             if (!string.IsNullOrEmpty(RoleID))
             {
                 //sqlTxt = "select Id, RoleId, DataScopeId, ScopeValue from roledatascopes where RoleId = @RoleId";
-                sqlTxt = "Id as Id, RoleId as RoleId, DataScopeId as DataScopeId, ScopeValue as ScopeValue from roledatascopes where RoleId = @RoleId";
+                sqlTxt = "select Id as Id, RoleId as RoleId, DataScopeId as DataScopeId, ScopeValue as ScopeValue from roledatascopes where RoleId = @RoleId";
 
                 sqlParam = new Dictionary<string, object> { { "@RoleId", RoleID } };
+            }
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
             }
 
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, sqlParam);

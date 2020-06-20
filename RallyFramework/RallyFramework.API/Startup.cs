@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Hosting.Internal;
 using Microsoft.Extensions.Logging;
 using Rally.Framework.Facade;
 
@@ -29,6 +30,8 @@ namespace RallyFramework.API
             Global.CurrentDBConnectionString = Configuration["Data:DefaultConnection:ConnectionString"];
             Global.CurrentDBType = Configuration["Data:DbType"];
 
+            Facade.SetModuleSQLStatements();
+
             services.AddControllers();
         }
 
@@ -37,6 +40,10 @@ namespace RallyFramework.API
         {
             //Global.CurrentDBConnectionString = Configuration["Data:DefaultConnection:ConnectionString"];
             //Global.CurrentDBType = Configuration["Data:DbType"];
+
+            Rally.Framework.Authorization.ModuleConfiguration.DefaultResourceACConfigurationFilePath = $"{env.ContentRootPath}{System.IO.Path.DirectorySeparatorChar}ac-items-config.xml";
+
+            Security.Regiser();
 
             if (env.IsDevelopment())
             {
@@ -48,7 +55,7 @@ namespace RallyFramework.API
             app.UseRouting();
 
             app.UseAuthorization();
-
+            
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

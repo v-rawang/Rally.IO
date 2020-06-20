@@ -67,6 +67,11 @@ namespace Rally.Framework.Authentication
 
             string sqlTxt = "select Id as Id, UserName as UserName, PasswordHash as PasswordHash, PasswordSalt as PasswordSalt from users where UserName = @UserName";
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { { "@UserName", UserName } });
 
             if (dbResult != null && dbResult.Count == 1)
@@ -92,6 +97,11 @@ namespace Rally.Framework.Authentication
             //string sqlTxt = "select Id, UserName, PasswordHash, PasswordSalt from users where UserName = @UserName";
 
             string sqlTxt = "select Id as Id, UserName as UserName, PasswordHash as PasswordHash, PasswordSalt as PasswordSalt from users where UserName = @UserName";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { { "@UserName", UserName } });
 
@@ -121,6 +131,11 @@ namespace Rally.Framework.Authentication
             //string sqlTxt = "select Id, UserName, UserType, PasswordHash, PasswordSalt from users where UserName = @UserName";
 
             string sqlTxt = "select Id as Id, UserName as UserName, UserType as UserType, PasswordHash as PasswordHash, PasswordSalt as PasswordSalt from users where UserName = @UserName";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { {"@UserName",UserName } });
 
@@ -172,6 +187,11 @@ namespace Rally.Framework.Authentication
 
             string sqlTxt = "select Id as Id, UserName as UserName, UserType as UserType, PasswordHash as PasswordHash, PasswordSalt as PasswordSalt from users where UserName = @UserName";
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { { "@UserName", UserName } });
 
             if (dbResult != null && dbResult.Count == 1)
@@ -210,7 +230,7 @@ namespace Rally.Framework.Authentication
                             ExpiresIn = CommonUtility.GetMillisecondsByDateTime(tokenExpirationDate, null),
                             RefreshToken = refreshToken,
                             UserName = UserName,
-                            Scope = "Newford"
+                            Scope = "Default"
                         };
                     }
                 }
@@ -224,6 +244,11 @@ namespace Rally.Framework.Authentication
             //string sqlTxt = "select PasswordVerificationTokenExpirationDate from users where PasswordVerificationToken = @PasswordVerificationToken";
 
             string sqlTxt = "select PasswordVerificationTokenExpirationDate as PasswordVerificationTokenExpirationDate from users where PasswordVerificationToken = @PasswordVerificationToken";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             byte[] tokenBytes = Encoding.UTF8.GetBytes(AccessToken);
             string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(Key, tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{AccessToken}:{Key}");//
@@ -247,6 +272,11 @@ namespace Rally.Framework.Authentication
             //string sqlTxt = "select Id, PasswordVerificationTokenExpirationDate from users where PasswordVerificationToken = @PasswordVerificationToken";
 
             string sqlTxt = "select Id as Id, PasswordVerificationTokenExpirationDate as PasswordVerificationTokenExpirationDate from users where PasswordVerificationToken = @PasswordVerificationToken";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             byte[] tokenBytes = Encoding.UTF8.GetBytes(AccessToken);
             string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(Key, tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{AccessToken}:{Key}");//
@@ -277,6 +307,11 @@ namespace Rally.Framework.Authentication
             //string sqlTxt = "select Id, UserName from users where UserName = @UserName";
 
             string sqlTxt = "select Id as Id, UserName as UserName from users where UserName = @UserName";
+
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
 
             IList<IDictionary<string, object>> dbResult = this.dmlOperable.ExeReader(sqlTxt, new Dictionary<string, object>() { { "@UserName", Argument } });
 
@@ -326,6 +361,11 @@ namespace Rally.Framework.Authentication
                 //string sqlTxt = "select PasswordVerificationTokenExpirationDate from users where UserName = @UserName and PasswordVerificationToken = @PasswordVerificationToken";
 
                 string sqlTxt = "select PasswordVerificationTokenExpirationDate as PasswordVerificationTokenExpirationDate from users where UserName = @UserName and PasswordVerificationToken = @PasswordVerificationToken";
+
+                if (this.dbType == DBTypeEnum.PostgreSQL)
+                {
+                    sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+                }
 
                 byte[] tokenBytes = Encoding.UTF8.GetBytes(tokenArgs[1]);
                 string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(tokenArgs[0], tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{AccessToken}:{Key}");//

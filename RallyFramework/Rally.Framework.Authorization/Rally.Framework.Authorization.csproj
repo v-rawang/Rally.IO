@@ -80,6 +80,10 @@
       <Project>{4d7d07cc-8781-475d-b486-9009928bc2ef}</Project>
       <Name>Rally.Lib.Persistence.Core</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rally.Lib.Utility.Common\Rally.Lib.Utility.Common.csproj">
+      <Project>{c5654637-5413-47cb-9140-68a9f01e270c}</Project>
+      <Name>Rally.Lib.Utility.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

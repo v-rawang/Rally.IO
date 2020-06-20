@@ -155,6 +155,11 @@ namespace Rally.Framework.Authentication
                 sqlParam = new Dictionary<string, object> { { "@UserName", UserName } };
             }
 
+            if (this.dbType == DBTypeEnum.PostgreSQL)
+            {
+                sqlTxt = DBUtility.RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(sqlTxt);
+            }
+
             var dbResult = this.dmlOperable.ExeReader(sqlTxt, sqlParam);
 
             if (dbResult != null &&dbResult.Count > 0)

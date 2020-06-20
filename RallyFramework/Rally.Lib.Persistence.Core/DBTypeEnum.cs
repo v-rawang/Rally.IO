@@ -30,10 +30,12 @@ namespace Rally.Lib.Persistence.Core
         /// <summary>
         /// SQLite 数据库
         /// </summary>
-        SQLite = 3
+        SQLite = 3,
         ///// <summary>
         ///// ACCESS 数据库
         ///// </summary>
         //ACCESS
+		PostgreSQL = 4
+
 	}
 }

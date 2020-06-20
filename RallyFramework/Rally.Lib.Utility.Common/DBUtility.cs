@@ -105,5 +105,118 @@ namespace Rally.Lib.Utility.Common
 
             return returnValue;
         }
+
+        public static string RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(string SelectStatement) 
+        {
+            string statement = SelectStatement;
+
+            string resultStatement = "";
+
+            if (statement.ToLower().StartsWith("select ") && statement.ToLower().Contains(" from"))
+            {
+                statement = statement.Substring(7);
+
+                int index = statement.ToLower().IndexOf(" from");
+
+                statement = statement.Substring(0, index);
+
+                resultStatement = SelectStatement.Replace(statement, "{0}");
+
+                string[] columnNames = statement.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (columnNames != null && columnNames.Length >0)
+                {
+                    for (int i = 0; i < columnNames.Length; i++)
+                    {
+                        //columnNames[i] = $"\"{columnNames[i]}\"";
+
+                        //if (columnNames[i].ToLower().Contains(" as "))
+                        //{
+                        //    columnNames[i] = columnNames[i].Insert(columnNames[i].IndexOf(" "), "\"");
+                        //    columnNames[i] = columnNames[i].Insert(columnNames[i].LastIndexOf(" ") + 1, "\"");
+                        //}
+
+                        if (columnNames[i].ToLower().Contains(" as "))
+                        {
+                            columnNames[i] = $"{columnNames[i]}\"";
+                            columnNames[i] = columnNames[i].Insert(columnNames[i].LastIndexOf(" ") + 1, "\"");
+                        }
+                        else
+                        {
+                            columnNames[i] = $"{columnNames[i]} as \"{columnNames[i]}\"";
+                        }
+                    }
+
+                    string columns = "";
+
+                    for (int i = 0; i < columnNames.Length; i++)
+                    {
+                        columns += columnNames[i];
+
+                        if (i != (columnNames.Length - 1))
+                        {
+                            columns += ",";
+                        }
+                    }
+
+                    resultStatement = resultStatement.Replace("{0}", columns);
+                }
+            }
+
+            return resultStatement;
+        }
+
+        public static string RebuildPostgreSQLSelectStatementForOriginalColumnNameCase(string SelectStatement, string ReplacementChar)
+        {
+            string statement = SelectStatement;
+
+            string resultStatement = "";
+
+            if (statement.ToLower().StartsWith("select ") && statement.ToLower().Contains(" from"))
+            {
+                statement = statement.Substring(7);
+
+                int index = statement.ToLower().IndexOf(" from");
+
+                statement = statement.Substring(0, index);
+
+                resultStatement = SelectStatement.Replace(statement, "{0}");
+
+                string[] columnNames = statement.Split(new string[] { "," }, StringSplitOptions.RemoveEmptyEntries);
+
+                if (columnNames != null && columnNames.Length > 0)
+                {
+                    for (int i = 0; i < columnNames.Length; i++)
+                    {
+                        if (columnNames[i].ToLower().Contains(" as "))
+                        {
+                            columnNames[i] = $"{columnNames[i]}{ReplacementChar}";
+                            //columnNames[i] = columnNames[i].Insert(columnNames[i].IndexOf(" "), ReplacementChar);
+                            columnNames[i] = columnNames[i].Insert(columnNames[i].LastIndexOf(" ") + 1, ReplacementChar);
+                        }
+                        else
+                        {
+                            columnNames[i] = $"{columnNames[i]} as {ReplacementChar}{columnNames[i]}{ReplacementChar}";
+                        }
+                    }
+
+                    string columns = "";
+
+                    for (int i = 0; i < columnNames.Length; i++)
+                    {
+                        columns += columnNames[i];
+
+                        if (i != (columnNames.Length - 1))
+                        {
+                            columns += ",";
+                        }
+                    }
+
+                    resultStatement = resultStatement.Replace("{0}", columns);
+                }
+            }
+
+            return resultStatement;
+        }
     }
 }

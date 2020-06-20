@@ -11,7 +11,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\bin\Debug\
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\bin\Debug\Rally.Lib.Persistence.SQLServer.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\bin\Debug\Rally.Lib.Persistence.Core.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\bin\Debug\Rally.Lib.Persistence.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\obj\Debug\Rally.Lib.Persistence.SQLServer.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\obj\Debug\Rally.Lib.Persistence.SQLServer.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\obj\Debug\Rally.Lib.Persistence.SQLServer.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.SQLServer\obj\Debug\Rally.Lib.Persistence.SQLServer.dll

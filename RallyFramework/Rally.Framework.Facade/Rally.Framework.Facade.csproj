@@ -128,6 +128,10 @@
       <Project>{f506f4ac-913b-4976-9998-81db5c057609}</Project>
       <Name>Rally.Lib.Persistence.SQLServer</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Rally.Lib.Utility.Common\Rally.Lib.Utility.Common.csproj">
+      <Project>{c5654637-5413-47cb-9140-68a9f01e270c}</Project>
+      <Name>Rally.Lib.Utility.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Rally.Lib.Utility.Xml\Rally.Lib.Utility.Xml.csproj">
       <Project>{892de703-7bc3-45de-a07b-9e0cd7e6a690}</Project>
       <Name>Rally.Lib.Utility.Xml</Name>

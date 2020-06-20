@@ -8,3 +8,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol.ModbusTcp\obj\Deb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol.ModbusTcp\obj\Debug\Rally.Framework.Protocol.ModbusTcp.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol.ModbusTcp\obj\Debug\Rally.Framework.Protocol.ModbusTcp.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol.ModbusTcp\obj\Debug\Rally.Framework.Protocol.ModbusTcp.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Protocol.ModbusTcp\obj\Debug\Rally.Framework.Protocol.ModbusTcp.csprojAssemblyReference.cache

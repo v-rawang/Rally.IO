@@ -1344,7 +1344,8 @@
         "dependencies": {
           "Rally.Framework.Core": "1.0.0",
           "Rally.Framework.Core.DomainModel": "1.0.0",
-          "Rally.Lib.Persistence.Core": "1.0.0"
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Rally.Framework.Authorization.dll": {}
@@ -5648,6 +5649,7 @@
       "Rally.Lib.Persistence.PostgreSQL.Standard >= 1.0.0",
       "Rally.Lib.Persistence.SQLServer.Standard >= 1.0.0",
       "Rally.Lib.Persistence.SQLite.Standard >= 1.0.0",
+      "Rally.Lib.Utility.Common >= 1.0.0",
       "Rally.Lib.Utility.Xml >= 1.0.0"
     ]
   },
@@ -5746,6 +5748,9 @@
             },
             "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer.Standard\\Rally.Lib.Persistence.SQLServer.Standard.csproj": {
               "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer.Standard\\Rally.Lib.Persistence.SQLServer.Standard.csproj"
+            },
+            "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+              "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
             },
             "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj": {
               "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj"

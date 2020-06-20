@@ -215,7 +215,6 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\bin\Debug\CsvHe
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\bin\Debug\Newtonsoft.Json.xml
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\bin\Debug\System.Threading.Tasks.Extensions.xml
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.dll

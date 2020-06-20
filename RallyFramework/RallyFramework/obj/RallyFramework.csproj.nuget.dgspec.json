@@ -79,6 +79,9 @@
               },
               "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj": {
                 "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.Core\\Rally.Lib.Persistence.Core.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
               }
             }
           }
@@ -260,6 +263,9 @@
               },
               "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer.Standard\\Rally.Lib.Persistence.SQLServer.Standard.csproj": {
                 "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Persistence.SQLServer.Standard\\Rally.Lib.Persistence.SQLServer.Standard.csproj"
+              },
+              "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj": {
+                "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Common\\Rally.Lib.Utility.Common.csproj"
               },
               "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj": {
                 "projectPath": "D:\\SourceCode\\Rally.IO\\RallyFramework\\Rally.Lib.Utility.Xml\\Rally.Lib.Utility.Xml.csproj"

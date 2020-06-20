@@ -1409,7 +1409,8 @@
         "dependencies": {
           "Rally.Framework.Core": "1.0.0",
           "Rally.Framework.Core.DomainModel": "1.0.0",
-          "Rally.Lib.Persistence.Core": "1.0.0"
+          "Rally.Lib.Persistence.Core": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0"
         },
         "runtime": {
           "Rally.Framework.Authorization.dll": {}
@@ -1487,6 +1488,7 @@
           "Rally.Lib.Persistence.PostgreSQL.Standard": "1.0.0",
           "Rally.Lib.Persistence.SQLServer.Standard": "1.0.0",
           "Rally.Lib.Persistence.SQLite.Standard": "1.0.0",
+          "Rally.Lib.Utility.Common": "1.0.0",
           "Rally.Lib.Utility.Xml": "1.0.0"
         },
         "runtime": {

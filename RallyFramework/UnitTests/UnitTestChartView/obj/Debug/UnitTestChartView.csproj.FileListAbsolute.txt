@@ -26,4 +26,3 @@ D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\Unit
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.exe
 D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.pdb
-D:\SourceCode\Rally.IO\RallyFramework\UnitTests\UnitTestChartView\obj\Debug\UnitTestChartView.csprojAssemblyReference.cache

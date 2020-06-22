@@ -118,3 +118,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB\obj\Debug\Rally.
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB\obj\Debug\Rally.Lib.BigData.MongoDB.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB\obj\Debug\Rally.Lib.BigData.MongoDB.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB\obj\Debug\Rally.Lib.BigData.MongoDB.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB\obj\Debug\Rally.Lib.BigData.MongoDB.csprojAssemblyReference.cache

@@ -645,7 +645,7 @@ CREATE TABLE `alarmdataitems` (
 -- ----------------------------
 DROP TABLE IF EXISTS `nuclide`;
 CREATE TABLE `nuclide`  (
-  `ID` int(10) NOT NULL,
+  `ID` varchar(128) NOT NULL,
   `No` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `Name` varchar(128) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,
   `Symbol` varchar(20) CHARACTER SET utf8 COLLATE utf8_general_ci NULL DEFAULT NULL,

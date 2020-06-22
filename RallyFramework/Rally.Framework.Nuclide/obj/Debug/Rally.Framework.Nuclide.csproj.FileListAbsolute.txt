@@ -12,3 +12,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Nuclide\obj\Debug\Rally.Fr
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Nuclide\obj\Debug\Rally.Framework.Nuclide.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Nuclide\obj\Debug\Rally.Framework.Nuclide.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Nuclide\obj\Debug\Rally.Framework.Nuclide.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Nuclide\obj\Debug\Rally.Framework.Nuclide.csprojAssemblyReference.cache

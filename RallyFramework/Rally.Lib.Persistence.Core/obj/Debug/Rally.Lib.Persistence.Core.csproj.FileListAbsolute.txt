@@ -9,4 +9,3 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Core\bin\Debug\Rally
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Core\obj\Debug\Rally.Lib.Persistence.Core.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Core\obj\Debug\Rally.Lib.Persistence.Core.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Core\obj\Debug\Rally.Lib.Persistence.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Persistence.Core\obj\Debug\Rally.Lib.Persistence.Core.csprojAssemblyReference.cache

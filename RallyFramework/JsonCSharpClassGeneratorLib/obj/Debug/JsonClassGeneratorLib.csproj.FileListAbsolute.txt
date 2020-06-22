@@ -41,4 +41,3 @@ D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\Json
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\JsonClassGeneratorLib.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\Xamasoft.JsonClassGenerator.dll
 D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\Xamasoft.JsonClassGenerator.pdb
-D:\SourceCode\Rally.IO\RallyFramework\JsonCSharpClassGeneratorLib\obj\Debug\JsonClassGeneratorLib.csprojAssemblyReference.cache

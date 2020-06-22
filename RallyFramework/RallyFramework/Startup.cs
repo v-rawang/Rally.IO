@@ -24,14 +24,20 @@ namespace RallyFramework
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            Global.CurrentDBConnectionString = Configuration["Data:DefaultConnection:ConnectionString"];
+            Global.CurrentDBType = Configuration["Data:DbType"];
+
+            Facade.SetModuleSQLStatements();
+
             services.AddControllersWithViews();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            Global.CurrentDBConnectionString = Configuration["Data:DefaultConnection:ConnectionString"];
-            Global.CurrentDBType = Configuration["DbType"];
+            Rally.Framework.Authorization.ModuleConfiguration.DefaultResourceACConfigurationFilePath = $"{env.ContentRootPath}{System.IO.Path.DirectorySeparatorChar}ac-items-config.xml";
+
+            Security.Regiser();
 
             if (env.IsDevelopment())
             {

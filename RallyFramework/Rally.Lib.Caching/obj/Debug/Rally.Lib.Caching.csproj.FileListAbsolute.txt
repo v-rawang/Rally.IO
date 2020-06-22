@@ -45,3 +45,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Caching\obj\Debug\Rally.Lib.Cach
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Caching\obj\Debug\Rally.Lib.Caching.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Caching\obj\Debug\Rally.Lib.Caching.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Caching\obj\Debug\Rally.Lib.Caching.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Caching\obj\Debug\Rally.Lib.Caching.csprojAssemblyReference.cache

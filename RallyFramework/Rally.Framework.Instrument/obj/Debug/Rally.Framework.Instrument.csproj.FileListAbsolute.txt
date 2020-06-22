@@ -25,8 +25,8 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\bin\Debug\Rally
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\bin\Debug\Rally.Framework.Core.DomainModel.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\bin\Debug\Rally.Framework.Core.pdb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\bin\Debug\Rally.Lib.Persistence.Core.pdb
-D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Framework.Instrument\obj\Debug\Rally.Framework.Instrument.csprojAssemblyReference.cache

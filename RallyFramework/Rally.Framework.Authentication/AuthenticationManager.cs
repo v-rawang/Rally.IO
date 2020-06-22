@@ -34,7 +34,8 @@ namespace Rally.Framework.Authentication
             string sqlTxt = "update users set PasswordHash = @PasswordHash, PasswordSalt = @PasswordSalt, PasswordRev = @PasswordRev, PasswordChangedDate = @PasswordChangedDate, PasswordVerificationTokenExpirationDate = @PasswordVerificationTokenExpirationDate where UserName = @UserName";
 
             string passwordSalt = HashUtility.GenerateRandomString(4);
-            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{NewPassword}:{passwordSalt}");
+            //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{NewPassword}:{passwordSalt}");
+            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{NewPassword}:{passwordSalt}");
 
             //string passwordRev = this.dmlOperable.ExeSqlScalar("select PasswordRev from users where UserName = @UserName", new Dictionary<string, object> { { "@UserName", UserName} });
 
@@ -110,7 +111,8 @@ namespace Rally.Framework.Authentication
                 string userId = dbResult[0]["Id"].ToString();
                 string hashedPasswordInDB = dbResult[0]["PasswordHash"].ToString();
                 string passwordSalt = dbResult[0]["PasswordSalt"].ToString();
-                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{Password}:{passwordSalt}");
 
                 if (hashedPassword == hashedPasswordInDB)
                 {
@@ -144,17 +146,20 @@ namespace Rally.Framework.Authentication
                 string userId = dbResult[0]["Id"].ToString();
                 string hashedPasswordInDB = dbResult[0]["PasswordHash"].ToString();
                 string passwordSalt = dbResult[0]["PasswordSalt"].ToString();
-                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{Password}:{passwordSalt}");
 
                 if (hashedPassword == hashedPasswordInDB)
                 {
                     string tokenString = $"{HashUtility.GenerateRandomString(8)}:{UserName}:{hashedPassword}";
-                    tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                    //tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                    tokenString = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{userId}:{tokenString}");
                     byte[] tokenBytes = Encoding.UTF8.GetBytes(tokenString);
                     string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(Key, tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{tokenString}:{Key}"); //
                     DateTime tokenExpirationDate = DateTime.Now.AddDays(ModuleConfiguration.Default_Password_Expiration_Days);
 
-                    string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
+                    //string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
+                    string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
 
                     //sqlTxt = "update users set SecurityStamp = @SecurityStamp, PasswordVerificationToken = @PasswordVerificationToken, PasswordVerificationTokenExpirationDate = @PasswordVerificationTokenExpirationDate, ConfirmationToken = @ConfirmationToken where Id = @Id and UserName = @UserName";
 
@@ -199,17 +204,20 @@ namespace Rally.Framework.Authentication
                 string userId = dbResult[0]["Id"].ToString();
                 string hashedPasswordInDB = dbResult[0]["PasswordHash"].ToString();
                 string passwordSalt = dbResult[0]["PasswordSalt"].ToString();
-                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+                string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{Password}:{passwordSalt}");
 
                 if (hashedPassword == hashedPasswordInDB)
                 {
                     string tokenString = $"{HashUtility.GenerateRandomString(8)}:{UserName}:{hashedPassword}";
-                    tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                    //tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                    tokenString = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{userId}:{tokenString}");
                     byte[] tokenBytes = Encoding.UTF8.GetBytes(tokenString);
                     string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(Key, tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{tokenString}:{Key}"); //
                     DateTime tokenExpirationDate = DateTime.Now.AddDays(ModuleConfiguration.Default_Password_Expiration_Days);
 
-                    string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
+                    //string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
+                    string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{HashUtility.GenerateRandomString(10)}:{UserName}");
 
                     //sqlTxt = "update users set SecurityStamp = @SecurityStamp, PasswordVerificationToken = @PasswordVerificationToken, PasswordVerificationTokenExpirationDate = @PasswordVerificationTokenExpirationDate, ConfirmationToken = @ConfirmationToken where Id = @Id and UserName = @UserName";
 
@@ -320,17 +328,18 @@ namespace Rally.Framework.Authentication
                 string userId = dbResult[0]["Id"].ToString();
 
                 string tokenString = $"{HashUtility.GenerateRandomString(8)}:{Argument}";
-                tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                //tokenString = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{userId}:{tokenString}");
+                tokenString = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{userId}:{tokenString}");
                 byte[] tokenBytes = Encoding.UTF8.GetBytes(tokenString);
                 string tokenData = HashUtility.CreateHmac<System.Security.Cryptography.HMACMD5>(Argument, tokenBytes);//HashUtility.CreateHash<System.Security.Cryptography.SHA256Cng>($"{tokenString}:{Key}"); //
                 DateTime tokenExpirationDate = DateTime.Now.AddMinutes(ModuleConfiguration.Default_Temp_Token_Expiration_Minutes);
 
-                string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{Argument}");
+                //string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{HashUtility.GenerateRandomString(10)}:{Argument}");
+                string refreshToken = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{HashUtility.GenerateRandomString(10)}:{Argument}");
 
                 //sqlTxt = "update users set SecurityStamp = @SecurityStamp, PasswordVerificationToken = @PasswordVerificationToken, PasswordVerificationTokenExpirationDate = @PasswordVerificationTokenExpirationDate, ConfirmationToken = @ConfirmationToken where Id = @Id and UserName = @UserName";
 
                 sqlTxt = "update users set SecurityStamp = @SecurityStamp, PasswordVerificationToken = @PasswordVerificationToken, PasswordVerificationTokenExpirationDate = @PasswordVerificationTokenExpirationDate, ConfirmationToken = @ConfirmationToken where Id = @Id and UserName = @UserName";
-
 
                 int result = this.dmlOperable.ExeSql(sqlTxt, new Dictionary<string, object>() { { "@SecurityStamp", Argument }, { "@PasswordVerificationToken", tokenData }, { "@ConfirmationToken", refreshToken }, { "@PasswordVerificationTokenExpirationDate", tokenExpirationDate }, { "@Id", userId }, { "@UserName", Argument } });
 

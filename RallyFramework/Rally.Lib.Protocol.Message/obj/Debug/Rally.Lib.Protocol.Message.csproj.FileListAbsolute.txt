@@ -219,3 +219,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.Protocol.Message\obj\Debug\Rally.Lib.Protocol.Message.csprojAssemblyReference.cache

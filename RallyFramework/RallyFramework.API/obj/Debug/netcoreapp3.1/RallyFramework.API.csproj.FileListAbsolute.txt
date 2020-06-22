@@ -143,8 +143,6 @@ D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\bin\Debug\netcoreapp3.1
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.csprojAssemblyReference.cache
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.AssemblyInfoInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.AssemblyInfo.cs
-D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.csproj.CoreCompileInputs.cache
-D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.MvcApplicationPartsAssemblyInfo.cache
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.RazorTargetAssemblyInfo.cache
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.csproj.CopyComplete
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\staticwebassets\RallyFramework.API.StaticWebAssets.Manifest.cache
@@ -152,3 +150,5 @@ D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.dll
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.pdb
 D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.genruntimeconfig.cache
+D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.csproj.CoreCompileInputs.cache
+D:\SourceCode\Rally.IO\RallyFramework\RallyFramework.API\obj\Debug\netcoreapp3.1\RallyFramework.API.MvcApplicationPartsAssemblyInfo.cache

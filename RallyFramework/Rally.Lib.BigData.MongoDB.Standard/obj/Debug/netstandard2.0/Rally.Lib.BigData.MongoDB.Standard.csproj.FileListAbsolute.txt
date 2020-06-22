@@ -6,3 +6,4 @@ D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\bin\Deb
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.csproj.CoreCompileInputs.cache
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.dll
 D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.pdb
+D:\SourceCode\Rally.IO\RallyFramework\Rally.Lib.BigData.MongoDB.Standard\obj\Debug\netstandard2.0\Rally.Lib.BigData.MongoDB.Standard.csprojAssemblyReference.cache

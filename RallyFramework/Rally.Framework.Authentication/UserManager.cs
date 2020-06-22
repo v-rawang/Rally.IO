@@ -36,7 +36,8 @@ namespace Rally.Framework.Authentication
 
             string userId = Guid.NewGuid().ToString();
             string passwordSalt = HashUtility.GenerateRandomString(4);
-            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+            //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{Password}:{passwordSalt}");
             DateTime currDate = DateTime.Now;
 
             int dbResult = this.dmlOperable.ExeSql(sqlTxt, new Dictionary<string, object>() {
@@ -84,7 +85,8 @@ namespace Rally.Framework.Authentication
 
             string userId = !string.IsNullOrEmpty(UserID) ? UserID : Guid.NewGuid().ToString();
             string passwordSalt = HashUtility.GenerateRandomString(4);
-            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+            //string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.SHA1Cng>($"{Password}:{passwordSalt}");
+            string hashedPassword = HashUtility.CreateHash<System.Security.Cryptography.HMACSHA1>($"{Password}:{passwordSalt}");
             DateTime currDate = DateTime.Now;
 
             int dbResult = this.dmlOperable.ExeSql(sqlTxt, new Dictionary<string, object>() {

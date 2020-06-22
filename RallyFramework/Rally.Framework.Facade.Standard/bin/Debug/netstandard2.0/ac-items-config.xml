@@ -125,7 +125,7 @@
       </subject>
       <subject type="fixedUser">
         <id>USR-SYS-BUILTIN-SUPPER</id>
-        <name>newford</name>
+        <name>root</name>
         <description>超级用户</description>
       </subject>
       <!--<subject type="fixedUser">

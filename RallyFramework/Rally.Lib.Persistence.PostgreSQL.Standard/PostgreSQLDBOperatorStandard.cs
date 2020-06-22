@@ -100,7 +100,16 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                    //cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+
+                    if (Parameters[paramName] != null)
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }
                 }
             }
 
@@ -127,7 +136,16 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    da.SelectCommand.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                    //da.SelectCommand.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+
+                    if (Parameters[paramName] != null)
+                    {
+                        da.SelectCommand.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        da.SelectCommand.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }
                 }
             }
 
@@ -233,7 +251,16 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    sqlCmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                    //sqlCmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+
+                    if (Parameters[paramName] != null)
+                    {
+                        sqlCmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        sqlCmd.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }
                 }
             }
 
@@ -452,7 +479,14 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    cmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    if (Parameters[paramName] != null)
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }                
                 }
             }
 
@@ -507,7 +541,16 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                    //cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+
+                    if (Parameters[paramName] != null)
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }
                 }
             }
 
@@ -575,7 +618,16 @@ namespace Rally.Lib.Persistence.PostgreSQL.Standard
             {
                 foreach (string paramName in Parameters.Keys)
                 {
-                    cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+                    //cmd.Parameters.Add(new NpgsqlParameter(paramName, Parameters[paramName]));
+
+                    if (Parameters[paramName] != null)
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, Parameters[paramName])));
+                    }
+                    else
+                    {
+                        cmd.Parameters.Add((new NpgsqlParameter(paramName, System.DBNull.Value)));
+                    }
                 }
             }
 
